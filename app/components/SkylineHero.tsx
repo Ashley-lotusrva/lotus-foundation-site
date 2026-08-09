@@ -36,34 +36,39 @@ export default function SkylineHero() {
           className="object-cover"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-royal-purple/70 via-black/40 to-royal-purple/75" />
-      <div className="absolute inset-0 bg-black/15" />
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-        <p className="font-display italic text-gold text-lg [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">
-          Healing Happens Here. Hope Begins Today.
-        </p>
-        <h1 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-white max-w-2xl [text-shadow:0_2px_16px_rgba(0,0,0,0.7)]">
-          Rising Above. Growing Within.
-        </h1>
-        <p className="mt-6 text-base md:text-lg text-white max-w-lg [text-shadow:0_1px_8px_rgba(0,0,0,0.75)]">
-          The Lotus Foundation empowers individuals living with mental health
-          and substance use challenges through compassionate, evidence-based,
-          person-centered behavioral health services &mdash; rooted in
-          Richmond, Virginia.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Link
-            href="/contact"
-            className="rounded-full bg-white px-7 py-3 text-royal-purple font-medium hover:bg-gold hover:text-white transition-colors shadow-lg"
-          >
-            Get in Touch
-          </Link>
-          <Link
-            href="/services"
-            className="rounded-full border border-white px-7 py-3 text-white font-medium hover:bg-white hover:text-royal-purple transition-colors bg-black/10"
-          >
-            Our Services
-          </Link>
+      <div className="absolute inset-0 bg-gradient-to-r from-royal-purple/80 via-black/45 to-royal-purple/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-royal-purple/70" />
+      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 pb-16">
+        <div className="max-w-2xl">
+          <p className="font-display italic text-gold text-base md:text-lg [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">
+            Healing Happens Here. Hope Begins Today.
+          </p>
+          <h1 className="mt-4 font-display text-4xl md:text-6xl leading-[1.05] text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.7)]">
+            Rising Above.
+            <br />
+            <span className="text-teal-200">Growing Within.</span>
+          </h1>
+          <span className="mt-4 block h-[3px] w-24 bg-gold" />
+          <p className="mt-6 text-base md:text-lg text-white max-w-lg [text-shadow:0_1px_8px_rgba(0,0,0,0.75)]">
+            The Lotus Foundation empowers individuals living with mental
+            health and substance use challenges through compassionate,
+            evidence-based, person-centered behavioral health services
+            &mdash; rooted in Richmond, Virginia.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/contact"
+              className="rounded-full bg-white px-7 py-3 text-royal-purple font-medium hover:bg-gold hover:text-white transition-colors shadow-lg"
+            >
+              Get in Touch
+            </Link>
+            <Link
+              href="/services"
+              className="rounded-full border border-white px-7 py-3 text-white font-medium hover:bg-white hover:text-royal-purple transition-colors bg-black/10"
+            >
+              Our Services
+            </Link>
+          </div>
         </div>
       </div>
     </section>

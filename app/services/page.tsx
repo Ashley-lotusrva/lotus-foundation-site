@@ -76,10 +76,13 @@ export default function ServicesPage() {
     <div>
       <section className="bg-cream py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="font-display italic text-teal">What We Offer</p>
-          <h1 className="mt-3 font-display text-4xl text-royal-purple">
+          <p className="text-xs font-semibold uppercase tracking-widest text-royal-purple">
+            What We Offer
+          </p>
+          <h1 className="mt-2 font-display text-4xl text-royal-purple">
             Services We Offer
           </h1>
+          <span className="mt-4 block h-[3px] w-16 bg-gold mx-auto" />
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
             Compassionate, evidence-based programs designed to meet people
             where they are on their recovery journey.

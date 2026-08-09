@@ -12,10 +12,13 @@ export default function ContactPage() {
     <div>
       <section className="bg-cream py-16 md:py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="font-display italic text-teal">We&apos;re Here to Help</p>
-          <h1 className="mt-3 font-display text-4xl text-royal-purple">
+          <p className="text-xs font-semibold uppercase tracking-widest text-royal-purple">
+            We&apos;re Here to Help
+          </p>
+          <h1 className="mt-2 font-display text-4xl text-royal-purple">
             Get in Touch
           </h1>
+          <span className="mt-4 block h-[3px] w-16 bg-gold mx-auto" />
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
             Whether you&apos;re seeking services for yourself or a loved one,
             or want to learn more about The Lotus Foundation, we&apos;d love
