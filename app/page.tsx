@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SkylineHero from "./components/SkylineHero";
 
 const VALUES = [
   { letter: "L", title: "Leadership", desc: "We lead with integrity, accountability, and a commitment to excellence." },
@@ -28,47 +28,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-cream">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="font-display italic text-teal text-lg">
-              Healing Happens Here. Hope Begins Today.
-            </p>
-            <h1 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-royal-purple">
-              Rising Above. Growing Within.
-            </h1>
-            <p className="mt-6 text-base md:text-lg text-foreground/80 max-w-lg">
-              The Lotus Foundation empowers individuals living with mental health
-              and substance use challenges through compassionate, evidence-based,
-              person-centered behavioral health services.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="rounded-full bg-royal-purple px-7 py-3 text-white font-medium hover:bg-teal transition-colors"
-              >
-                Get in Touch
-              </Link>
-              <Link
-                href="/services"
-                className="rounded-full border border-royal-purple px-7 py-3 text-royal-purple font-medium hover:bg-royal-purple hover:text-white transition-colors"
-              >
-                Our Services
-              </Link>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src="/lotus-logo.png"
-              alt="The Lotus Foundation"
-              width={340}
-              height={480}
-              className="w-56 md:w-72 h-auto drop-shadow-xl"
-              priority
-            />
-          </div>
-        </div>
-      </section>
+      <SkylineHero />
 
       {/* Mission */}
       <section className="mx-auto max-w-4xl px-6 py-20 text-center">
