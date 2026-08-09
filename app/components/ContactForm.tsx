@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const CONTACT_EMAIL = "ashley.thompson@lotusfoundation.info";
+const CONTACT_EMAIL = "info@lotusfoundation.info";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

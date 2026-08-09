@@ -52,7 +52,7 @@ it was bought.
 3. Save. DNS changes can take anywhere from a few minutes to ~24 hours to
    fully propagate.
 
-**Email stays untouched.** As long as email (ashley.thompson@lotusfoundation.info)
+**Email stays untouched.** As long as email (info@lotusfoundation.info)
 uses its own MX records — whether that's Squarespace Email, Google Workspace,
 or something else — changing the A/CNAME records for the website does not
 affect email delivery. Only touch the records Vercel asks for.
@@ -65,7 +65,7 @@ GitHub (`git push`) — Vercel automatically redeploys on every push to `main`.
 ## Notes on the contact form
 
 The Contact page form currently opens the visitor's email app with a
-pre-filled message to ashley.thompson@lotusfoundation.info (no backend
+pre-filled message to info@lotusfoundation.info (no backend
 required, works immediately). If a proper in-page submission (e.g. via
 Formspree, Resend, or a database) is wanted later, that can be added without
 changing anything else on the site.

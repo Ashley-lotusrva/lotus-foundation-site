@@ -41,10 +41,13 @@ export default function ContactPage() {
             <h2 className="font-display text-2xl text-royal-purple">Contact Info</h2>
             <div className="mt-4 space-y-3 text-sm text-foreground/80">
               <a
-                href="mailto:ashley.thompson@lotusfoundation.info"
+                href="mailto:info@lotusfoundation.info"
                 className="block hover:text-teal"
               >
-                ashley.thompson@lotusfoundation.info
+                info@lotusfoundation.info
+              </a>
+              <a href="tel:+18044264617" className="block hover:text-teal">
+                (804) 426-4617
               </a>
               <p>Serving Richmond &amp; Central Virginia</p>
             </div>

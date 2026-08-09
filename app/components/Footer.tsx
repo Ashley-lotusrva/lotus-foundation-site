@@ -44,10 +44,13 @@ export default function Footer() {
             </h3>
             <div className="mt-4 flex flex-col gap-2 text-sm text-white/80">
               <a
-                href="mailto:ashley.thompson@lotusfoundation.info"
+                href="mailto:info@lotusfoundation.info"
                 className="hover:text-white"
               >
-                ashley.thompson@lotusfoundation.info
+                info@lotusfoundation.info
+              </a>
+              <a href="tel:+18044264617" className="hover:text-white">
+                (804) 426-4617
               </a>
               <span>Serving Richmond &amp; Central Virginia</span>
             </div>
