@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --color-royal-purple: #5E3A87;
-  --color-emerald-green: #2E8B57;
-  --color-teal: #2CA6A4;
-  --color-gold: #D4AF37;
-  --color-cream: #FBF9F5;
+  --color-royal-purple: #5e3a87;
+  --color-emerald-green: #2e8b57;
+  --color-teal: #2ca6a4;
+  --color-gold: #d4af37;
+  --color-cream: #fbf9f5;
   --background: #ffffff;
   --foreground: #2b2130;
 }
@@ -28,4 +28,334 @@ body {
 
 .font-display {
   font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Referral and private member workspace */
+.referral-shell,
+.staff-shell {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1.25rem 5rem;
+}
+.referral-masthead {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.referral-masthead h1,
+.staff-shell h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.25rem, 5vw, 3.6rem);
+  line-height: 1.15;
+  margin: 1rem 0;
+  color: #533579;
+}
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #526660;
+}
+.intake-card {
+  background: #fff;
+  border: 1px solid #dfd9e5;
+  border-radius: 22px;
+  padding: clamp(1.25rem, 4vw, 2.8rem);
+  box-shadow: 0 14px 45px #33204108;
+}
+.intake-card h2 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  margin: 0.75rem 0 1.5rem;
+  color: #533579;
+}
+.intro {
+  max-width: 900px;
+  margin: auto;
+}
+.intake-card p {
+  line-height: 1.75;
+  margin: 0.7rem 0;
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.intro-grid > div {
+  background: #f7f6f2;
+  padding: 1.25rem;
+  border-radius: 14px;
+}
+.primary,
+.secondary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 0.8rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 650;
+  cursor: pointer;
+  margin: 0.4rem 0.5rem 0.4rem 0;
+}
+.primary {
+  background: #5e3a87;
+  color: white;
+}
+.secondary {
+  background: #f3eff7;
+  color: #533579;
+  border: 1px solid #d4c6e2;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.text-button {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #533579;
+  cursor: pointer;
+  padding: 0.65rem 0.3rem;
+}
+.intake-layout {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 2rem;
+}
+.topic-nav {
+  align-self: start;
+  position: sticky;
+  top: 110px;
+}
+.topic-nav p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 1rem 0;
+}
+.intake-field {
+  border-bottom: 1px solid #e9e4ed;
+  margin: 1.6rem 0;
+  padding: 0 0 1.6rem;
+  min-width: 0;
+}
+.intake-field legend {
+  font-size: 1.14rem;
+  font-weight: 650;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+}
+.field-note {
+  color: #5c5762;
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+.answer-choices {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.75rem 0;
+}
+.answer-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 1rem;
+  border: 1px solid #d9d2e1;
+  border-radius: 12px;
+  cursor: pointer;
+  line-height: 1.5;
+  background: #fff;
+}
+.answer-choice:has(input:checked) {
+  background: #f3edf9;
+  border-color: #5e3a87;
+}
+.answer-choice input {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: #5e3a87;
+}
+.referral-shell textarea,
+.referral-shell input:not([type="checkbox"]):not([type="radio"]),
+.referral-shell select,
+.staff-shell input,
+.staff-shell select,
+.staff-shell textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #bfb5c9;
+  border-radius: 9px;
+  background: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #2b2130;
+  margin: 0.4rem 0 0.8rem;
+  min-height: 46px;
+}
+.referral-shell textarea,
+.staff-shell textarea {
+  resize: vertical;
+}
+.skip-choice {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.87rem;
+  margin-top: 0.7rem;
+  color: #615669;
+}
+.skip-choice select {
+  max-width: 290px;
+  font-size: 0.87rem;
+  margin: 0;
+}
+.repeat-card {
+  padding: 1.1rem;
+  margin: 0.8rem 0;
+  background: #faf8fc;
+  border: 1px solid #dfd9e5;
+  border-radius: 12px;
+}
+.repeat-card label {
+  display: block;
+  margin-top: 0.75rem;
+}
+.crisis {
+  font-size: 0.88rem !important;
+  border-top: 1px solid #e0dbe5;
+  padding-top: 1rem;
+  color: #655766;
+}
+.notice,
+.error {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff5e4;
+  color: #6f4512;
+  margin-bottom: 1rem;
+}
+.error {
+  background: #fff0f0;
+  color: #8a2525;
+}
+.case-number {
+  display: block;
+  font-size: 1.8rem;
+  color: #533579;
+  margin: 2rem 0;
+}
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.honeypot {
+  position: absolute;
+  left: -10000px;
+}
+.review-answer {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eee;
+  overflow-wrap: anywhere;
+}
+.review-answer p {
+  white-space: pre-wrap;
+}
+details {
+  margin: 1rem 0;
+  border: 1px solid #dfd9e5;
+  padding: 1rem;
+  border-radius: 12px;
+}
+summary {
+  cursor: pointer;
+  font-weight: 650;
+}
+.staff-toolbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.staff-record {
+  border: 1px solid #ded6e7;
+  border-radius: 16px;
+  padding: 1.3rem;
+  margin: 1rem 0;
+  background: white;
+}
+.staff-record h2 {
+  font-size: 1.35rem;
+  color: #533579;
+  font-weight: 700;
+}
+.badge {
+  display: inline-block;
+  background: #f0eaf5;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
+.staff-muted {
+  font-size: 0.9rem;
+  color: #625769;
+}
+.staff-shell {
+  overflow-wrap: anywhere;
+}
+.staff-shell table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.staff-shell td,
+.staff-shell th {
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px solid #ddd;
+}
+.staff-shell pre {
+  white-space: pre-wrap;
+}
+*:focus-visible {
+  outline: 3px solid #80622a;
+  outline-offset: 3px;
+}
+.staff-shell .intake-field {
+  max-width: 800px;
+}
+@media (max-width: 760px) {
+  .intake-layout,
+  .intro-grid,
+  .staff-grid {
+    grid-template-columns: 1fr;
+  }
+  .topic-nav {
+    position: static;
+  }
+  .referral-shell,
+  .staff-shell {
+    padding-top: 1.5rem;
+  }
+  .skip-choice {
+    display: block;
+  }
+  .step-actions {
+    gap: 0.4rem;
+  }
+  .intake-card h2 {
+    font-size: 1.7rem;
+  }
 }
