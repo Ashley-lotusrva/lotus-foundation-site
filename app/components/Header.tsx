@@ -46,10 +46,10 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/referral"
             className="rounded-full bg-royal-purple px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-teal"
           >
-            Get in Touch
+            Make a Referral
           </Link>
         </nav>
 
@@ -77,11 +77,11 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/referral"
             className="mt-2 rounded-full bg-royal-purple px-5 py-2 text-center text-sm font-medium text-white"
             onClick={() => setOpen(false)}
           >
-            Get in Touch
+            Make a Referral
           </Link>
         </nav>
       )}

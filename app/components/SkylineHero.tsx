@@ -57,10 +57,10 @@ export default function SkylineHero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/contact"
+              href="/referral"
               className="rounded-full bg-white px-7 py-3 text-royal-purple font-medium hover:bg-gold hover:text-white transition-colors shadow-lg"
             >
-              Get in Touch
+              Make a Referral
             </Link>
             <Link
               href="/services"

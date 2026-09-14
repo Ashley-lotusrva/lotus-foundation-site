@@ -27,10 +27,10 @@ export default function CTABanner() {
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <Link
-            href="/contact"
+            href="/referral"
             className="rounded-full bg-white px-8 py-3 text-royal-purple font-medium hover:bg-gold hover:text-white transition-colors whitespace-nowrap"
           >
-            Contact Us
+            Make a Referral
           </Link>
           <div className="flex flex-col gap-1 text-sm text-white/90">
             <a

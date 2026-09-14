@@ -1,0 +1,4421 @@
+[
+  {
+    "number": 1,
+    "title": "How would you like to complete this?",
+    "source": "☐ On my own\n☐ With someone from The Lotus Foundation\n☐ With someone I trust\n☐ I would like someone to read the questions to me\n☐ I’m not sure yet\nWho is answering?\n☐ I am asking for help for myself\n☐ I am helping someone answer\n☐ I am referring someone for help\n☐ I am a staff member\nIf someone is helping, what is their name and relationship to you?\n\nWould anything make this easier?\n☐ Larger words on the page\n☐ A different language\n☐ Someone to explain the questions\n☐ More time or breaks\n☐ A private place to talk\n☐ Something else: __________",
+    "blocks": [
+      {
+        "id": "s1_f1",
+        "type": "choice",
+        "label": "How would you like to complete this?",
+        "options": [
+          "On my own",
+          "With someone from The Lotus Foundation",
+          "With someone I trust",
+          "I would like someone to read the questions to me",
+          "I’m not sure yet"
+        ]
+      },
+      {
+        "id": "s1_f2",
+        "type": "choice",
+        "label": "Who is answering?",
+        "options": [
+          "I am asking for help for myself",
+          "I am helping someone answer",
+          "I am referring someone for help",
+          "I am a staff member"
+        ]
+      },
+      {
+        "id": "s1_f3",
+        "type": "text",
+        "label": "If someone is helping, what is their name and relationship to you?",
+        "options": []
+      },
+      {
+        "id": "s1_f4",
+        "type": "choice",
+        "label": "Would anything make this easier?",
+        "options": [
+          "Larger words on the page",
+          "A different language",
+          "Someone to explain the questions",
+          "More time or breaks",
+          "A private place to talk",
+          "Something else"
+        ]
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "What would you like help with first?",
+    "source": "Pick as many as you want.\n☐ A place to stay\n☐ Food, clothes, or everyday needs\n☐ My health or how I’m feeling\n☐ Alcohol or drug use\n☐ Money or benefits\n☐ School or learning something new\n☐ Finding or keeping a job\n☐ Using a phone or computer\n☐ Getting to appointments or other places\n☐ Caring for my family\n☐ Everyday tasks\n☐ Meeting people or finding support\n☐ Something else: __________\n☐ I’m not sure—please help me figure it out\nWhich need matters most today?\n\nIs there a date we should know about?\nFor example, you may need to leave a place, leave a hospital, go to court, or start a program.\n☐ Yes: __________\n☐ No\n☐ I’m not sure",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Pick as many as you want."
+      },
+      {
+        "id": "s2_f1",
+        "type": "choice",
+        "label": "What would you like help with first?",
+        "options": [
+          "A place to stay",
+          "Food, clothes, or everyday needs",
+          "My health or how I’m feeling",
+          "Alcohol or drug use",
+          "Money or benefits",
+          "School or learning something new",
+          "Finding or keeping a job",
+          "Using a phone or computer",
+          "Getting to appointments or other places",
+          "Caring for my family",
+          "Everyday tasks",
+          "Meeting people or finding support",
+          "Something else",
+          "I’m not sure—please help me figure it out"
+        ]
+      },
+      {
+        "id": "s2_f2",
+        "type": "text",
+        "label": "Which need matters most today?",
+        "options": []
+      },
+      {
+        "id": "s2_f3",
+        "type": "choice",
+        "label": "Is there a date we should know about?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For example, you may need to leave a place, leave a hospital, go to court, or start a program."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "What name should we use?",
+    "source": "Name you would like us to use: __________\nName on your records, if different:\nFirst: __________\nMiddle name or initial: __________\nLast: __________\nWhen were you born? __________\n☐ I’m not sure of the exact date\nWhat name or words should we use when talking about you?\nFor example, your pronouns. You can skip this.",
+    "blocks": [
+      {
+        "id": "s3_f1",
+        "type": "text",
+        "label": "Name you would like us to use",
+        "options": []
+      },
+      {
+        "id": "s3_f2",
+        "type": "text",
+        "label": "Name on your records, if different",
+        "options": []
+      },
+      {
+        "id": "s3_f3",
+        "type": "text",
+        "label": "First",
+        "options": []
+      },
+      {
+        "id": "s3_f4",
+        "type": "text",
+        "label": "Middle name or initial",
+        "options": []
+      },
+      {
+        "id": "s3_f5",
+        "type": "text",
+        "label": "Last",
+        "options": []
+      },
+      {
+        "id": "s3_f6",
+        "type": "choice",
+        "label": "When were you born?",
+        "options": ["I’m not sure of the exact date"]
+      },
+      {
+        "id": "s3_f7",
+        "type": "text",
+        "label": "What name or words should we use when talking about you?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "For example, your pronouns. You can skip this."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "How can we reach you safely?",
+    "source": "☐ Call me\n☐ Text me\n☐ Email me\n☐ Contact someone I trust\n☐ I do not have a steady way to be reached\n☐ I’d rather make a plan with staff\nPhone number, if you have one: __________\nAnother number, if helpful: __________\nEmail, if you have one: __________\nIs it okay to leave a voicemail?\n☐ Yes ☐ No ☐ I’m not sure\nIs it okay to say the message is from The Lotus Foundation?\n☐ Yes ☐ No ☐ Ask me first\nWhat days or times work best?\n\nIs there anything we should do—or avoid—to contact you safely?\n\nIf you want us to contact someone you trust:\nTheir name: __________\nHow they know you: __________\nTheir phone or email: __________\nMay we contact them to help arrange a conversation with you?\n☐ Yes ☐ No\nIf you do not have a steady way to be reached:\nComplete with staff.\nWhere/how we will reconnect: __________\nDate or time, if agreed: __________\nStaff member responsible: __________",
+    "blocks": [
+      {
+        "id": "s4_f1",
+        "type": "choice",
+        "label": "How can we reach you safely?",
+        "options": [
+          "Call me",
+          "Text me",
+          "Email me",
+          "Contact someone I trust",
+          "I do not have a steady way to be reached",
+          "I’d rather make a plan with staff"
+        ]
+      },
+      {
+        "id": "s4_f2",
+        "type": "text",
+        "label": "Phone number, if you have one",
+        "options": []
+      },
+      {
+        "id": "s4_f3",
+        "type": "text",
+        "label": "Another number, if helpful",
+        "options": []
+      },
+      {
+        "id": "s4_f4",
+        "type": "text",
+        "label": "Email, if you have one",
+        "options": []
+      },
+      {
+        "id": "s4_f5",
+        "type": "choice",
+        "label": "Is it okay to leave a voicemail?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s4_f6",
+        "type": "choice",
+        "label": "Is it okay to say the message is from The Lotus Foundation?",
+        "options": ["Yes", "No", "Ask me first"]
+      },
+      {
+        "id": "s4_f7",
+        "type": "text",
+        "label": "What days or times work best?",
+        "options": []
+      },
+      {
+        "id": "s4_f8",
+        "type": "text",
+        "label": "Is there anything we should do—or avoid—to contact you safely?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "If you want us to contact someone you trust:"
+      },
+      {
+        "id": "s4_f9",
+        "type": "text",
+        "label": "Their name",
+        "options": []
+      },
+      {
+        "id": "s4_f10",
+        "type": "text",
+        "label": "How they know you",
+        "options": []
+      },
+      {
+        "id": "s4_f11",
+        "type": "text",
+        "label": "Their phone or email",
+        "options": []
+      },
+      {
+        "id": "s4_f12",
+        "type": "choice",
+        "label": "May we contact them to help arrange a conversation with you?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "type": "note",
+        "text": "If you do not have a steady way to be reached:"
+      },
+      {
+        "type": "note",
+        "text": "Complete with staff."
+      },
+      {
+        "id": "s4_f13",
+        "type": "text",
+        "label": "Where/how we will reconnect",
+        "options": []
+      },
+      {
+        "id": "s4_f14",
+        "type": "text",
+        "label": "Date or time, if agreed",
+        "options": []
+      },
+      {
+        "id": "s4_f15",
+        "type": "text",
+        "label": "Staff member responsible",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Where are you staying or receiving mail?",
+    "source": "Where are you staying right now?\nAn address, area, or general location is okay. You can also discuss it privately.\n\n☐ I do not have a steady place to stay\n☐ I’d rather talk about this\nCity or county: __________\nState: __________\nZIP code, if known: __________\nCan you safely get mail there?\n☐ Yes ☐ No ☐ I’m not sure\nAnother mailing address, if you use one:\n\nZIP code of your last steady address, if known: __________",
+    "blocks": [
+      {
+        "id": "s5_f1",
+        "type": "choice",
+        "label": "Where are you staying right now?",
+        "options": [
+          "I do not have a steady place to stay",
+          "I’d rather talk about this"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "An address, area, or general location is okay. You can also discuss it privately."
+      },
+      {
+        "id": "s5_f2",
+        "type": "text",
+        "label": "City or county",
+        "options": []
+      },
+      {
+        "id": "s5_f3",
+        "type": "text",
+        "label": "State",
+        "options": []
+      },
+      {
+        "id": "s5_f4",
+        "type": "text",
+        "label": "ZIP code, if known",
+        "options": []
+      },
+      {
+        "id": "s5_f5",
+        "type": "choice",
+        "label": "Can you safely get mail there?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s5_f6",
+        "type": "text",
+        "label": "Another mailing address, if you use one",
+        "options": []
+      },
+      {
+        "id": "s5_f7",
+        "type": "text",
+        "label": "ZIP code of your last steady address, if known",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "What language or support works best for you?",
+    "source": "Language you use most: __________\nOther languages you use: __________\nLanguage you would like us to use: __________\nWould you like an interpreter?\n☐ Yes ☐ No ☐ I’m not sure\nDo you need help with reading, writing, hearing, seeing, speaking, or using this form?\n☐ Yes ☐ No ☐ I’d rather talk about it\nWhat would help?",
+    "blocks": [
+      {
+        "id": "s6_f1",
+        "type": "text",
+        "label": "Language you use most",
+        "options": []
+      },
+      {
+        "id": "s6_f2",
+        "type": "text",
+        "label": "Other languages you use",
+        "options": []
+      },
+      {
+        "id": "s6_f3",
+        "type": "text",
+        "label": "Language you would like us to use",
+        "options": []
+      },
+      {
+        "id": "s6_f4",
+        "type": "choice",
+        "label": "Would you like an interpreter?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s6_f5",
+        "type": "choice",
+        "label": "Do you need help with reading, writing, hearing, seeing, speaking, or using this form?",
+        "options": ["Yes", "No", "I’d rather talk about it"]
+      },
+      {
+        "id": "s6_f6",
+        "type": "text",
+        "label": "What would help?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "A little more about you",
+    "source": "You may skip these questions. Staff can explain whether any are needed for a particular program.\nHow do you describe your gender?\n\nHow do you describe your race?\nChoose all that fit.\n☐ American Indian or Alaska Native\n☐ Asian\n☐ Black or African American\n☐ Middle Eastern or North African\n☐ Native Hawaiian or Pacific Islander\n☐ White\n☐ I describe myself another way: __________\n☐ I’m not sure\n☐ I’d rather skip this\nDo you identify as Hispanic or Latino?\n☐ Yes ☐ No\n☐ I describe myself another way: __________\n☐ I’m not sure ☐ I’d rather skip this\nWhere were you born?\nCity, state, or country—optional.\n\nWhich best describes your relationship status?\n☐ Single ☐ Married ☐ Separated ☐ Divorced\n☐ Widowed ☐ In a relationship/domestic partnership\n☐ Another answer: __________\n☐ I’d rather skip this\nHave you served in the military?\n☐ Yes, in the past\n☐ Yes, I am serving now\n☐ No\n☐ I’m not sure\nDo you receive military or veteran support or benefits?",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "You may skip these questions. Staff can explain whether any are needed for a particular program."
+      },
+      {
+        "id": "s7_f1",
+        "type": "text",
+        "label": "How do you describe your gender?",
+        "options": []
+      },
+      {
+        "id": "s7_f2",
+        "type": "choice",
+        "label": "How do you describe your race?",
+        "options": [
+          "American Indian or Alaska Native",
+          "Asian",
+          "Black or African American",
+          "Middle Eastern or North African",
+          "Native Hawaiian or Pacific Islander",
+          "White",
+          "I describe myself another way",
+          "I’m not sure",
+          "I’d rather skip this"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Choose all that fit."
+      },
+      {
+        "id": "s7_f3",
+        "type": "choice",
+        "label": "Do you identify as Hispanic or Latino?",
+        "options": [
+          "Yes",
+          "No",
+          "I describe myself another way",
+          "I’m not sure",
+          "I’d rather skip this"
+        ]
+      },
+      {
+        "id": "s7_f4",
+        "type": "text",
+        "label": "Where were you born?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "City, state, or country—optional."
+      },
+      {
+        "id": "s7_f5",
+        "type": "choice",
+        "label": "Which best describes your relationship status?",
+        "options": [
+          "Single",
+          "Married",
+          "Separated",
+          "Divorced",
+          "Widowed",
+          "In a relationship/domestic partnership",
+          "Another answer",
+          "I’d rather skip this"
+        ]
+      },
+      {
+        "id": "s7_f6",
+        "type": "choice",
+        "label": "Have you served in the military?",
+        "options": [
+          "Yes, in the past",
+          "Yes, I am serving now",
+          "No",
+          "I’m not sure"
+        ]
+      },
+      {
+        "id": "s7_f7",
+        "type": "text",
+        "label": "Do you receive military or veteran support or benefits?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "title": "How did you find The Lotus Foundation?",
+    "source": "☐ Friend or family member\n☐ Doctor, counselor, or other healthcare worker\n☐ Hospital or treatment program\n☐ Community group\n☐ School or job-training program\n☐ Court, probation, parole, or reentry program\n☐ Website or social media\n☐ Another way: __________\nHave you received help from The Lotus Foundation before?\n☐ Yes ☐ No ☐ I’m not sure\nIf yes, what help and about when?\n\nPrevious case number, if known: __________\nIf someone referred you\nTheir name: __________\nOrganization and role: __________\nPhone or email: __________\nDo you know about this referral?\n☐ Yes ☐ No ☐ Staff need to check\nHave you agreed to be contacted directly?\n☐ Yes ☐ No ☐ Staff need to check\nWho should staff contact first? __________",
+    "blocks": [
+      {
+        "id": "s8_f1",
+        "type": "choice",
+        "label": "How did you find The Lotus Foundation?",
+        "options": [
+          "Friend or family member",
+          "Doctor, counselor, or other healthcare worker",
+          "Hospital or treatment program",
+          "Community group",
+          "School or job-training program",
+          "Court, probation, parole, or reentry program",
+          "Website or social media",
+          "Another way"
+        ]
+      },
+      {
+        "id": "s8_f2",
+        "type": "choice",
+        "label": "Have you received help from The Lotus Foundation before?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s8_f3",
+        "type": "text",
+        "label": "If yes, what help and about when?",
+        "options": []
+      },
+      {
+        "id": "s8_f4",
+        "type": "text",
+        "label": "Previous case number, if known",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "If someone referred you"
+      },
+      {
+        "id": "s8_f5",
+        "type": "text",
+        "label": "Their name",
+        "options": []
+      },
+      {
+        "id": "s8_f6",
+        "type": "text",
+        "label": "Organization and role",
+        "options": []
+      },
+      {
+        "id": "s8_f7",
+        "type": "text",
+        "label": "Phone or email",
+        "options": []
+      },
+      {
+        "id": "s8_f8",
+        "type": "choice",
+        "label": "Do you know about this referral?",
+        "options": ["Yes", "No", "Staff need to check"]
+      },
+      {
+        "id": "s8_f9",
+        "type": "choice",
+        "label": "Have you agreed to be contacted directly?",
+        "options": ["Yes", "No", "Staff need to check"]
+      },
+      {
+        "id": "s8_f10",
+        "type": "text",
+        "label": "Who should staff contact first?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Would you like to keep going?",
+    "source": "☐ Yes\n☐ I would rather finish with someone\n☐ I need a break\n☐ I would like to stop for today\nStaff can record where to restart. You do not need to repeat answers already given.",
+    "blocks": [
+      {
+        "id": "s9_f1",
+        "type": "choice",
+        "label": "Would you like to keep going?",
+        "options": [
+          "Yes",
+          "I would rather finish with someone",
+          "I need a break",
+          "I would like to stop for today"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Staff can record where to restart. You do not need to repeat answers already given."
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Who lives with you?",
+    "source": "How many people usually live or stay with you, including you? _____\nHow many are adults? _____\nHow many are children under 18? _____\n☐ I’m not sure\nFor each person, tell us:\nName or initials: __________\nHow they are related to you: __________\nAge, or date of birth if needed for a program: __________\nGender, optional: __________\nDo they need help with anything? __________\nRepeat for each person. Staff can help write the answers.\nDo you help support children or other family members who live somewhere else?\n☐ Yes ☐ No ☐ I’m not sure\nFor each person:\nName or initials: __________\nHow they are related to you: __________\nAge, if known: __________\nWhat care or support do you provide? __________\nWhat help is needed? __________",
+    "blocks": [
+      {
+        "id": "s10_f1",
+        "type": "text",
+        "label": "How many people usually live or stay with you, including you?",
+        "options": []
+      },
+      {
+        "id": "s10_f2",
+        "type": "text",
+        "label": "How many are adults?",
+        "options": []
+      },
+      {
+        "id": "s10_f3",
+        "type": "choice",
+        "label": "How many are children under 18?",
+        "options": ["I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For each person, tell us:"
+      },
+      {
+        "id": "s10_f4",
+        "type": "text",
+        "label": "Name or initials",
+        "options": []
+      },
+      {
+        "id": "s10_f5",
+        "type": "text",
+        "label": "How they are related to you",
+        "options": []
+      },
+      {
+        "id": "s10_f6",
+        "type": "text",
+        "label": "Age, or date of birth if needed for a program",
+        "options": []
+      },
+      {
+        "id": "s10_f7",
+        "type": "text",
+        "label": "Gender, optional",
+        "options": []
+      },
+      {
+        "id": "s10_f8",
+        "type": "text",
+        "label": "Do they need help with anything?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Repeat for each person. Staff can help write the answers."
+      },
+      {
+        "id": "s10_f9",
+        "type": "choice",
+        "label": "Do you help support children or other family members who live somewhere else?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For each person:"
+      },
+      {
+        "id": "s10_f10",
+        "type": "text",
+        "label": "Name or initials",
+        "options": []
+      },
+      {
+        "id": "s10_f11",
+        "type": "text",
+        "label": "How they are related to you",
+        "options": []
+      },
+      {
+        "id": "s10_f12",
+        "type": "text",
+        "label": "Age, if known",
+        "options": []
+      },
+      {
+        "id": "s10_f13",
+        "type": "text",
+        "label": "What care or support do you provide?",
+        "options": []
+      },
+      {
+        "id": "s10_f14",
+        "type": "text",
+        "label": "What help is needed?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Who supports you?",
+    "source": "Who can you count on when you need help?\n\nWhat do they help with?\n\nAre there family relationships that make things harder for you?\n☐ Yes ☐ No ☐ I’d rather talk privately\nTell us only what you want us to know:\n\nAre there people we should not contact?\n\nDoes anyone in your family need support of their own?",
+    "blocks": [
+      {
+        "id": "s11_f1",
+        "type": "text",
+        "label": "Who can you count on when you need help?",
+        "options": []
+      },
+      {
+        "id": "s11_f2",
+        "type": "text",
+        "label": "What do they help with?",
+        "options": []
+      },
+      {
+        "id": "s11_f3",
+        "type": "choice",
+        "label": "Are there family relationships that make things harder for you?",
+        "options": ["Yes", "No", "I’d rather talk privately"]
+      },
+      {
+        "id": "s11_f4",
+        "type": "text",
+        "label": "Tell us only what you want us to know",
+        "options": []
+      },
+      {
+        "id": "s11_f5",
+        "type": "text",
+        "label": "Are there people we should not contact?",
+        "options": []
+      },
+      {
+        "id": "s11_f6",
+        "type": "text",
+        "label": "Does anyone in your family need support of their own?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Do you care for children or other dependents?",
+    "source": "☐ Yes ☐ No\n☐ I help care for someone, but they do not live with me\nIf no, skip to Section 13.\nWho do you care for, and how old are they?\n\nDo they live with you all the time, some of the time, or somewhere else?\n\nFor children under age 6, do they attend any of these?\n☐ Childcare\n☐ Preschool\n☐ Head Start or Early Head Start\n☐ Early intervention or another child-development program\n☐ None right now\n☐ I’m not sure\nProgram name, if known: __________\nFor school-age children:\nSchool and grade: __________\nAfter-school activities: __________\nIs getting to or staying in school difficult?\n☐ Yes ☐ No ☐ Sometimes\nWhat help would make a difference?\n\nDo any children or dependents need help with learning, development, health, or daily care?\n\nIs childcare or caregiving making it hard for you to work, learn, or attend appointments?\n\nHas a child welfare agency been involved with your family?\n☐ Now ☐ In the past ☐ Both\n☐ No ☐ I’m not sure ☐ I’d rather talk privately\nIs there anything about that situation staff should know to help you?\n\nWhat is going well in caring for your family?\n\nWhat support would help you meet their needs safely?",
+    "blocks": [
+      {
+        "id": "s12_f1",
+        "type": "choice",
+        "label": "Do you care for children or other dependents?",
+        "options": [
+          "Yes",
+          "No",
+          "I help care for someone, but they do not live with me"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "If no, skip to Section 13."
+      },
+      {
+        "id": "s12_f2",
+        "type": "text",
+        "label": "Who do you care for, and how old are they?",
+        "options": []
+      },
+      {
+        "id": "s12_f3",
+        "type": "text",
+        "label": "Do they live with you all the time, some of the time, or somewhere else?",
+        "options": []
+      },
+      {
+        "id": "s12_f4",
+        "type": "choice",
+        "label": "For children under age 6, do they attend any of these?",
+        "options": [
+          "Childcare",
+          "Preschool",
+          "Head Start or Early Head Start",
+          "Early intervention or another child-development program",
+          "None right now",
+          "I’m not sure"
+        ]
+      },
+      {
+        "id": "s12_f5",
+        "type": "text",
+        "label": "Program name, if known",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "For school-age children:"
+      },
+      {
+        "id": "s12_f6",
+        "type": "text",
+        "label": "School and grade",
+        "options": []
+      },
+      {
+        "id": "s12_f7",
+        "type": "text",
+        "label": "After-school activities",
+        "options": []
+      },
+      {
+        "id": "s12_f8",
+        "type": "choice",
+        "label": "Is getting to or staying in school difficult?",
+        "options": ["Yes", "No", "Sometimes"]
+      },
+      {
+        "id": "s12_f9",
+        "type": "text",
+        "label": "What help would make a difference?",
+        "options": []
+      },
+      {
+        "id": "s12_f10",
+        "type": "text",
+        "label": "Do any children or dependents need help with learning, development, health, or daily care?",
+        "options": []
+      },
+      {
+        "id": "s12_f11",
+        "type": "text",
+        "label": "Is childcare or caregiving making it hard for you to work, learn, or attend appointments?",
+        "options": []
+      },
+      {
+        "id": "s12_f12",
+        "type": "choice",
+        "label": "Has a child welfare agency been involved with your family?",
+        "options": [
+          "Now",
+          "In the past",
+          "Both",
+          "No",
+          "I’m not sure",
+          "I’d rather talk privately"
+        ]
+      },
+      {
+        "id": "s12_f13",
+        "type": "text",
+        "label": "Is there anything about that situation staff should know to help you?",
+        "options": []
+      },
+      {
+        "id": "s12_f14",
+        "type": "text",
+        "label": "What is going well in caring for your family?",
+        "options": []
+      },
+      {
+        "id": "s12_f15",
+        "type": "text",
+        "label": "What support would help you meet their needs safely?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "title": "Do you feel safe in your relationships?",
+    "source": "We ask so we can offer support and contact you safely. You can skip this or talk privately.\nHas a partner or someone close to you hurt, threatened, controlled, or made you afraid?\n☐ This is happening now\n☐ This happened in the past\n☐ Both\n☐ No\n☐ I’m not sure\n☐ I’d rather talk privately\nAbout when, if you want to share?\n\nDo you need help with safety, a place to stay, or contacting support?\n\nIs there anything we should avoid doing that could put you at risk?\n\nDo you already have support or a plan that helps you stay safe?",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "We ask so we can offer support and contact you safely. You can skip this or talk privately."
+      },
+      {
+        "id": "s13_f1",
+        "type": "choice",
+        "label": "Has a partner or someone close to you hurt, threatened, controlled, or made you afraid?",
+        "options": [
+          "This is happening now",
+          "This happened in the past",
+          "Both",
+          "No",
+          "I’m not sure",
+          "I’d rather talk privately"
+        ]
+      },
+      {
+        "id": "s13_f2",
+        "type": "text",
+        "label": "About when, if you want to share?",
+        "options": []
+      },
+      {
+        "id": "s13_f3",
+        "type": "text",
+        "label": "Do you need help with safety, a place to stay, or contacting support?",
+        "options": []
+      },
+      {
+        "id": "s13_f4",
+        "type": "text",
+        "label": "Is there anything we should avoid doing that could put you at risk?",
+        "options": []
+      },
+      {
+        "id": "s13_f5",
+        "type": "text",
+        "label": "Do you already have support or a plan that helps you stay safe?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "title": "Where are you staying right now?",
+    "source": "Choose the answer that fits best.\n☐ A home I own\n☐ A place I rent\n☐ With friends or family\n☐ A hotel or motel\n☐ A shelter\n☐ A shelter for people leaving an unsafe relationship\n☐ Temporary housing through a program\n☐ Recovery housing\n☐ Outside, in a car, or somewhere not meant for sleeping\n☐ A hospital\n☐ A mental health treatment facility\n☐ An alcohol or drug treatment facility\n☐ Jail or prison\n☐ Foster care\n☐ Somewhere else: __________\n☐ I’d rather talk about it\nAbout how long have you been staying there?\n\nDoes the place meet your needs and feel safe enough?\n☐ Yes ☐ No ☐ Sometimes ☐ I’m not sure\nWhat concerns do you have?\n\nCould you lose this place or need to leave soon?\n☐ Yes ☐ No ☐ I’m not sure\nAbout when, and why?",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Choose the answer that fits best."
+      },
+      {
+        "id": "s14_f1",
+        "type": "choice",
+        "label": "Where are you staying right now?",
+        "options": [
+          "A home I own",
+          "A place I rent",
+          "With friends or family",
+          "A hotel or motel",
+          "A shelter",
+          "A shelter for people leaving an unsafe relationship",
+          "Temporary housing through a program",
+          "Recovery housing",
+          "Outside, in a car, or somewhere not meant for sleeping",
+          "A hospital",
+          "A mental health treatment facility",
+          "An alcohol or drug treatment facility",
+          "Jail or prison",
+          "Foster care",
+          "Somewhere else",
+          "I’d rather talk about it"
+        ]
+      },
+      {
+        "id": "s14_f2",
+        "type": "text",
+        "label": "About how long have you been staying there?",
+        "options": []
+      },
+      {
+        "id": "s14_f3",
+        "type": "choice",
+        "label": "Does the place meet your needs and feel safe enough?",
+        "options": ["Yes", "No", "Sometimes", "I’m not sure"]
+      },
+      {
+        "id": "s14_f4",
+        "type": "text",
+        "label": "What concerns do you have?",
+        "options": []
+      },
+      {
+        "id": "s14_f5",
+        "type": "choice",
+        "label": "Could you lose this place or need to leave soon?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s14_f6",
+        "type": "text",
+        "label": "About when, and why?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Do you get help paying for housing?",
+    "source": "☐ Yes ☐ I have applied ☐ No ☐ I’m not sure\nProgram name, if known: __________\nAmount of help, if known: __________\nWhen did you apply or last renew? __________\nHave you applied for another place or housing program?\n☐ Yes ☐ No ☐ I’m not sure\nProgram/place and application date, if known:\n\nDo you need help with an application or renewal?",
+    "blocks": [
+      {
+        "id": "s15_f1",
+        "type": "choice",
+        "label": "Do you get help paying for housing?",
+        "options": ["Yes", "I have applied", "No", "I’m not sure"]
+      },
+      {
+        "id": "s15_f2",
+        "type": "text",
+        "label": "Program name, if known",
+        "options": []
+      },
+      {
+        "id": "s15_f3",
+        "type": "text",
+        "label": "Amount of help, if known",
+        "options": []
+      },
+      {
+        "id": "s15_f4",
+        "type": "text",
+        "label": "When did you apply or last renew?",
+        "options": []
+      },
+      {
+        "id": "s15_f5",
+        "type": "choice",
+        "label": "Have you applied for another place or housing program?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s15_f6",
+        "type": "text",
+        "label": "Program/place and application date, if known",
+        "options": []
+      },
+      {
+        "id": "s15_f7",
+        "type": "text",
+        "label": "Do you need help with an application or renewal?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "title": "What housing costs do you pay?",
+    "source": "Do you currently pay rent?\n☐ All of it ☐ Part of it ☐ None ☐ This does not apply\nAbout how much each month? $_____\n☐ I’m not sure\nDo you currently pay utilities, such as power or water?\n☐ All of them ☐ Part of them ☐ None ☐ This does not apply\nAbout how much each month? $_____\n☐ I’m not sure\nAt your previous place, did you pay rent?\n☐ All ☐ Part ☐ None ☐ This does not apply\nAt your previous place, did you pay utilities?\n☐ All ☐ Part ☐ None ☐ This does not apply\nAre you behind on rent or utilities, or have you received a shutoff notice?\n☐ Yes ☐ No ☐ I’m not sure\nWhat help do you need?",
+    "blocks": [
+      {
+        "id": "s16_f1",
+        "type": "choice",
+        "label": "Do you currently pay rent?",
+        "options": ["All of it", "Part of it", "None", "This does not apply"]
+      },
+      {
+        "id": "s16_f2",
+        "type": "choice",
+        "label": "About how much each month?",
+        "options": ["I’m not sure"]
+      },
+      {
+        "id": "s16_f3",
+        "type": "choice",
+        "label": "Do you currently pay utilities, such as power or water?",
+        "options": [
+          "All of them",
+          "Part of them",
+          "None",
+          "This does not apply"
+        ]
+      },
+      {
+        "id": "s16_f4",
+        "type": "choice",
+        "label": "About how much each month?",
+        "options": ["I’m not sure"]
+      },
+      {
+        "id": "s16_f5",
+        "type": "choice",
+        "label": "At your previous place, did you pay rent?",
+        "options": ["All", "Part", "None", "This does not apply"]
+      },
+      {
+        "id": "s16_f6",
+        "type": "choice",
+        "label": "At your previous place, did you pay utilities?",
+        "options": ["All", "Part", "None", "This does not apply"]
+      },
+      {
+        "id": "s16_f7",
+        "type": "choice",
+        "label": "Are you behind on rent or utilities, or have you received a shutoff notice?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s16_f8",
+        "type": "text",
+        "label": "What help do you need?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "title": "Have you been without a steady place to stay?",
+    "source": "Are you without a steady place now?\n☐ Yes ☐ No ☐ I’m not sure\nAbout how long has this been going on this time?\n☐ Less than a month\n☐ One to five months\n☐ Six to eleven months\n☐ One year to less than two years\n☐ Two years to less than three years\n☐ Three years or more\n☐ I’m not sure\n☐ This does not apply\nAbout when did it start, if you remember?\n\nIn the past five years, about how many separate times have you been without a steady place?\n_____ ☐ I’m not sure\nAbout how many times in your life?\n_____ ☐ I’m not sure\nYour best estimate is okay.",
+    "blocks": [
+      {
+        "id": "s17_f1",
+        "type": "choice",
+        "label": "Are you without a steady place now?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s17_f2",
+        "type": "choice",
+        "label": "About how long has this been going on this time?",
+        "options": [
+          "Less than a month",
+          "One to five months",
+          "Six to eleven months",
+          "One year to less than two years",
+          "Two years to less than three years",
+          "Three years or more",
+          "I’m not sure",
+          "This does not apply"
+        ]
+      },
+      {
+        "id": "s17_f3",
+        "type": "text",
+        "label": "About when did it start, if you remember?",
+        "options": []
+      },
+      {
+        "id": "s17_f4",
+        "type": "text",
+        "label": "In the past five years, about how many separate times have you been without a steady place?",
+        "options": []
+      },
+      {
+        "id": "s17_f5",
+        "type": "choice",
+        "label": "_____",
+        "options": ["I’m not sure"]
+      },
+      {
+        "id": "s17_f6",
+        "type": "text",
+        "label": "About how many times in your life?",
+        "options": []
+      },
+      {
+        "id": "s17_f7",
+        "type": "choice",
+        "label": "_____",
+        "options": ["I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "Your best estimate is okay."
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "title": "Where have you stayed recently?",
+    "source": "In the past 30 days, where have you slept?\nYou may choose more than one answer.\n☐ My own or rented place\n☐ With friends or family\n☐ Hotel or motel\n☐ Shelter\n☐ Temporary or recovery housing\n☐ Outside or in a car\n☐ Hospital or treatment facility\n☐ Jail or prison\n☐ Foster care\n☐ Somewhere else: __________\nAbout when or for how long?\n\nDuring the past four years, have you stayed in shelters?\n☐ Yes ☐ No ☐ I’m not sure\nFor each stay you remember:\nShelter name, if known: __________\nAbout when: __________\nAbout how many nights or months: __________",
+    "blocks": [
+      {
+        "id": "s18_f1",
+        "type": "choice",
+        "label": "In the past 30 days, where have you slept?",
+        "options": [
+          "My own or rented place",
+          "With friends or family",
+          "Hotel or motel",
+          "Shelter",
+          "Temporary or recovery housing",
+          "Outside or in a car",
+          "Hospital or treatment facility",
+          "Jail or prison",
+          "Foster care",
+          "Somewhere else"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "You may choose more than one answer."
+      },
+      {
+        "id": "s18_f2",
+        "type": "text",
+        "label": "About when or for how long?",
+        "options": []
+      },
+      {
+        "id": "s18_f3",
+        "type": "choice",
+        "label": "During the past four years, have you stayed in shelters?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For each stay you remember:"
+      },
+      {
+        "id": "s18_f4",
+        "type": "text",
+        "label": "Shelter name, if known",
+        "options": []
+      },
+      {
+        "id": "s18_f5",
+        "type": "text",
+        "label": "About when",
+        "options": []
+      },
+      {
+        "id": "s18_f6",
+        "type": "text",
+        "label": "About how many nights or months",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "title": "What has made it hard to keep housing?",
+    "source": "Have you ever been evicted?\n☐ Yes ☐ No ☐ I’m not sure\nAbout when, and what happened?\n\nHave any of these caused you to leave a place?\n☐ Could not afford rent\n☐ Eviction for another reason\n☐ Problems with friends or family\n☐ Too many people in the space\n☐ Violence or an unsafe situation\n☐ Going to jail or prison\n☐ Going to a hospital or treatment program\n☐ Building was unsafe or closed\n☐ Fire or disaster\n☐ Something else: __________\nWhat makes finding or keeping housing difficult now?\n\nWhat kind of place would work for you?\n\nHousing history—complete with help if needed\nTell us about places you stayed during the past five years.\nFor each place:\nPlace or type of housing: __________\nAbout when you stayed there: __________\nWas it in your name or someone else’s? __________\nWhy did you leave? __________\nApproximate dates are okay. Staff can add continuation entries.",
+    "blocks": [
+      {
+        "id": "s19_f1",
+        "type": "choice",
+        "label": "Have you ever been evicted?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s19_f2",
+        "type": "text",
+        "label": "About when, and what happened?",
+        "options": []
+      },
+      {
+        "id": "s19_f3",
+        "type": "choice",
+        "label": "Have any of these caused you to leave a place?",
+        "options": [
+          "Could not afford rent",
+          "Eviction for another reason",
+          "Problems with friends or family",
+          "Too many people in the space",
+          "Violence or an unsafe situation",
+          "Going to jail or prison",
+          "Going to a hospital or treatment program",
+          "Building was unsafe or closed",
+          "Fire or disaster",
+          "Something else"
+        ]
+      },
+      {
+        "id": "s19_f4",
+        "type": "text",
+        "label": "What makes finding or keeping housing difficult now?",
+        "options": []
+      },
+      {
+        "id": "s19_f5",
+        "type": "text",
+        "label": "What kind of place would work for you?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Housing history—complete with help if needed"
+      },
+      {
+        "type": "note",
+        "text": "Tell us about places you stayed during the past five years."
+      },
+      {
+        "type": "note",
+        "text": "For each place:"
+      },
+      {
+        "id": "s19_f6",
+        "type": "text",
+        "label": "Place or type of housing",
+        "options": []
+      },
+      {
+        "id": "s19_f7",
+        "type": "text",
+        "label": "About when you stayed there",
+        "options": []
+      },
+      {
+        "id": "s19_f8",
+        "type": "text",
+        "label": "Was it in your name or someone else’s?",
+        "options": []
+      },
+      {
+        "id": "s19_f9",
+        "type": "text",
+        "label": "Why did you leave?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Approximate dates are okay. Staff can add continuation entries."
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "title": "Do you have health coverage?",
+    "source": "☐ Medicaid\n☐ Medicare\n☐ Insurance through work or another plan\n☐ Another kind: __________\n☐ I have applied\n☐ I do not have coverage\n☐ I’m not sure\nPlan name, if known: __________\nDo you need help getting or using coverage?",
+    "blocks": [
+      {
+        "id": "s20_f1",
+        "type": "choice",
+        "label": "Do you have health coverage?",
+        "options": [
+          "Medicaid",
+          "Medicare",
+          "Insurance through work or another plan",
+          "Another kind",
+          "I have applied",
+          "I do not have coverage",
+          "I’m not sure"
+        ]
+      },
+      {
+        "id": "s20_f2",
+        "type": "text",
+        "label": "Plan name, if known",
+        "options": []
+      },
+      {
+        "id": "s20_f3",
+        "type": "text",
+        "label": "Do you need help getting or using coverage?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "title": "Does a health condition or disability affect everyday life?",
+    "source": "☐ Yes ☐ No ☐ I’m not sure ☐ I’d rather talk privately\nWhat would you like us to know?\n\nAbout how long has it affected you?\n\nWhat everyday things are harder because of it?\n\nHave you ever been told by a healthcare professional that you have any of these?\nFor each, you may answer: Now / In the past / Both / No / Not sure / Skip.\n* A mental health condition: __________\n* An alcohol use disorder: __________\n* Another substance use disorder: __________\n* HIV/AIDS or a related condition—optional: __________\n* A developmental or intellectual disability: __________\n* A physical disability: __________\n* Another long-term health condition: __________\nIf a program needs paperwork about a condition, do you have any?\n☐ Yes ☐ No ☐ I’m not sure\nYou do not need to find paperwork before beginning this form.",
+    "blocks": [
+      {
+        "id": "s21_f1",
+        "type": "choice",
+        "label": "Does a health condition or disability affect everyday life?",
+        "options": ["Yes", "No", "I’m not sure", "I’d rather talk privately"]
+      },
+      {
+        "id": "s21_f2",
+        "type": "text",
+        "label": "What would you like us to know?",
+        "options": []
+      },
+      {
+        "id": "s21_f3",
+        "type": "text",
+        "label": "About how long has it affected you?",
+        "options": []
+      },
+      {
+        "id": "s21_f4",
+        "type": "text",
+        "label": "What everyday things are harder because of it?",
+        "options": []
+      },
+      {
+        "id": "s21_f5",
+        "type": "text",
+        "label": "Have you ever been told by a healthcare professional that you have any of these?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "For each, you may answer: Now / In the past / Both / No / Not sure / Skip."
+      },
+      {
+        "id": "s21_f6",
+        "type": "choice",
+        "label": "A mental health condition",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f7",
+        "type": "choice",
+        "label": "An alcohol use disorder",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f8",
+        "type": "choice",
+        "label": "Another substance use disorder",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f9",
+        "type": "choice",
+        "label": "HIV/AIDS or a related condition—optional",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f10",
+        "type": "choice",
+        "label": "A developmental or intellectual disability",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f11",
+        "type": "choice",
+        "label": "A physical disability",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f12",
+        "type": "choice",
+        "label": "Another long-term health condition",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s21_f13",
+        "type": "choice",
+        "label": "If a program needs paperwork about a condition, do you have any?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "You do not need to find paperwork before beginning this form."
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "title": "Where do you get healthcare?",
+    "source": "Do you have a doctor, clinic, or other healthcare provider?\n☐ Yes ☐ No ☐ I’m not sure\nFor each provider, if known:\nName or clinic: __________\nType of care: __________\nPhone: __________\nAddress: __________\nLast or next visit: __________\nAre there health concerns you need help with now?\n\nHave you stayed in a hospital for a medical problem?\n☐ Yes ☐ No ☐ I’m not sure\nIf relevant to your support, tell us:\nHospital: __________\nAbout when: __________\nReason: __________\nFollow-up help needed: __________",
+    "blocks": [
+      {
+        "id": "s22_f1",
+        "type": "choice",
+        "label": "Do you have a doctor, clinic, or other healthcare provider?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For each provider, if known:"
+      },
+      {
+        "id": "s22_f2",
+        "type": "text",
+        "label": "Name or clinic",
+        "options": []
+      },
+      {
+        "id": "s22_f3",
+        "type": "text",
+        "label": "Type of care",
+        "options": []
+      },
+      {
+        "id": "s22_f4",
+        "type": "text",
+        "label": "Phone",
+        "options": []
+      },
+      {
+        "id": "s22_f5",
+        "type": "text",
+        "label": "Address",
+        "options": []
+      },
+      {
+        "id": "s22_f6",
+        "type": "text",
+        "label": "Last or next visit",
+        "options": []
+      },
+      {
+        "id": "s22_f7",
+        "type": "text",
+        "label": "Are there health concerns you need help with now?",
+        "options": []
+      },
+      {
+        "id": "s22_f8",
+        "type": "choice",
+        "label": "Have you stayed in a hospital for a medical problem?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "If relevant to your support, tell us:"
+      },
+      {
+        "id": "s22_f9",
+        "type": "text",
+        "label": "Hospital",
+        "options": []
+      },
+      {
+        "id": "s22_f10",
+        "type": "text",
+        "label": "About when",
+        "options": []
+      },
+      {
+        "id": "s22_f11",
+        "type": "text",
+        "label": "Reason",
+        "options": []
+      },
+      {
+        "id": "s22_f12",
+        "type": "text",
+        "label": "Follow-up help needed",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "title": "Are there checkups or other care you need?",
+    "source": "About when was your last general checkup? __________\nLast dental visit? __________\nLast reproductive-health or OB/GYN visit, if applicable? __________\nDo you need help with any of these?\n☐ Medical care ☐ Dental care ☐ Vision ☐ Hearing\n☐ Reproductive healthcare ☐ Other care: __________\n☐ I’m not sure\nDoes anyone in your household need help getting healthcare?\n\nWhat makes getting care difficult?\n☐ Cost ☐ Transportation ☐ Scheduling\n☐ Childcare/caregiving ☐ Finding a provider\n☐ Understanding paperwork ☐ Something else: __________",
+    "blocks": [
+      {
+        "id": "s23_f1",
+        "type": "text",
+        "label": "About when was your last general checkup?",
+        "options": []
+      },
+      {
+        "id": "s23_f2",
+        "type": "text",
+        "label": "Last dental visit?",
+        "options": []
+      },
+      {
+        "id": "s23_f3",
+        "type": "text",
+        "label": "Last reproductive-health or OB/GYN visit, if applicable?",
+        "options": []
+      },
+      {
+        "id": "s23_f4",
+        "type": "choice",
+        "label": "Do you need help with any of these?",
+        "options": [
+          "Medical care",
+          "Dental care",
+          "Vision",
+          "Hearing",
+          "Reproductive healthcare",
+          "Other care",
+          "I’m not sure"
+        ]
+      },
+      {
+        "id": "s23_f5",
+        "type": "text",
+        "label": "Does anyone in your household need help getting healthcare?",
+        "options": []
+      },
+      {
+        "id": "s23_f6",
+        "type": "choice",
+        "label": "What makes getting care difficult?",
+        "options": [
+          "Cost",
+          "Transportation",
+          "Scheduling",
+          "Childcare/caregiving",
+          "Finding a provider",
+          "Understanding paperwork",
+          "Something else"
+        ]
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "title": "Do you take any medicines?",
+    "source": "☐ Yes ☐ No ☐ I’m not sure ☐ I’d rather talk with someone\n\nYou can use a medicine list, bring the containers, or ask staff to help. It is okay if you do not know a name or dose. Please do not guess.\n\nPlease include medicines for physical health, mental health, or alcohol/drug treatment. You may also include medicines you buy without a prescription, vitamins, or supplements.\n\nTell us about each medicine\n\nWhat is the medicine called?\n__________\n\nHow much do you take each time?\nFor example: one tablet or 10 mg.\n__________ ☐ I’m not sure\n\nHow often do you take it?\nFor example: each morning, twice a day, or only when needed.\n__________ ☐ I’m not sure\n\nWhat do you take it for, if you know?\n__________ ☐ I’m not sure ☐ I’d rather skip this\n\nWho prescribes it or helps manage it?\nThe person’s name or clinic is enough.\n__________ ☐ I’m not sure ☐ I buy it without a prescription\n\nAre you taking it now?\n☐ Yes ☐ Sometimes ☐ No, I stopped\n☐ I ran out or cannot get it ☐ I’m not sure\n\nAnything you would like us to know about this medicine?\n__________\n\nRepeat these questions for each medicine. Staff may use the table below to record the answers instead; you do not need to fill out both.\n\nMedication list — staff may help complete\n\n| Medicine name | Dose—how much each time | Frequency—how often | Purpose, if known | Prescriber/provider, if known | Taking now or having trouble getting it? |\n| --- | --- | --- | --- | --- | --- |\n| __________ | __________ | __________ | __________ | __________ | __________ |\n| __________ | __________ | __________ | __________ | __________ | __________ |\n| __________ | __________ | __________ | __________ | __________ | __________ |\n| __________ | __________ | __________ | __________ | __________ | __________ |\n\nAllergies and reactions\n\nHave you ever had an allergy or a bad reaction to a medicine?\n☐ Yes ☐ No ☐ I’m not sure ☐ I’d rather talk with someone\n\nWhich medicine, if you know?\n__________\n\nWhat happened when you took it?\n__________\n\nDo you have other allergies we should know about?\nFor example: food, latex, or insect stings.\n☐ Yes ☐ No ☐ I’m not sure\n\nWhat are you allergic to, and what happens?\n__________\n\nGetting and taking your medicines\n\nWould you like help with any of these?\nChoose as many as you want.\n☐ Paying for medicine\n☐ Finding a provider who can prescribe it\n☐ Getting a prescription or refill\n☐ Getting to the pharmacy\n☐ Having medicine delivered, if available\n☐ Remembering when to take it\n☐ Understanding the label or instructions\n☐ Opening the container or measuring a dose\n☐ Finding a safe place to keep it\n☐ Keeping it cold, if needed\n☐ Talking with a provider about side effects\n☐ Something else: __________\n☐ No help needed right now\n☐ I’m not sure\n\nAre you out of a medicine you need, or close to running out?\n☐ Yes ☐ No ☐ I’m not sure\n\nWhich medicine? About how much is left, if you know?\n__________\n\nDoes anyone help you get or take your medicines now?\n☐ Yes ☐ No\n\nWho helps, and what do they help with?\n__________\n\nWhat extra help would make things easier?\n__________",
+    "blocks": [
+      {
+        "id": "s24_f1",
+        "type": "choice",
+        "label": "Do you take any medicines?",
+        "options": ["Yes", "No", "I’m not sure", "I’d rather talk with someone"]
+      },
+      {
+        "type": "note",
+        "text": "You can use a medicine list, bring the containers, or ask staff to help. It is okay if you do not know a name or dose. Please do not guess."
+      },
+      {
+        "type": "note",
+        "text": "Please include medicines for physical health, mental health, or alcohol/drug treatment. You may also include medicines you buy without a prescription, vitamins, or supplements."
+      },
+      {
+        "type": "note",
+        "text": "Tell us about each medicine"
+      },
+      {
+        "id": "s24_medications",
+        "type": "repeat",
+        "label": "Your medicines",
+        "options": [
+          "Medicine name",
+          "Dose — how much each time",
+          "Frequency — how often",
+          "Purpose, if known",
+          "Prescriber/provider, if known",
+          "Taking now or having trouble getting it?"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Allergies and reactions"
+      },
+      {
+        "id": "s24_f14",
+        "type": "choice",
+        "label": "Have you ever had an allergy or a bad reaction to a medicine?",
+        "options": ["Yes", "No", "I’m not sure", "I’d rather talk with someone"]
+      },
+      {
+        "id": "s24_f15",
+        "type": "text",
+        "label": "Which medicine, if you know?",
+        "options": []
+      },
+      {
+        "id": "s24_f16",
+        "type": "text",
+        "label": "What happened when you took it?",
+        "options": []
+      },
+      {
+        "id": "s24_f17",
+        "type": "choice",
+        "label": "Do you have other allergies we should know about?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For example: food, latex, or insect stings."
+      },
+      {
+        "id": "s24_f18",
+        "type": "text",
+        "label": "What are you allergic to, and what happens?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Getting and taking your medicines"
+      },
+      {
+        "id": "s24_f19",
+        "type": "choice",
+        "label": "Would you like help with any of these?",
+        "options": [
+          "Paying for medicine",
+          "Finding a provider who can prescribe it",
+          "Getting a prescription or refill",
+          "Getting to the pharmacy",
+          "Having medicine delivered, if available",
+          "Remembering when to take it",
+          "Understanding the label or instructions",
+          "Opening the container or measuring a dose",
+          "Finding a safe place to keep it",
+          "Keeping it cold, if needed",
+          "Talking with a provider about side effects",
+          "Something else",
+          "No help needed right now",
+          "I’m not sure"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Choose as many as you want."
+      },
+      {
+        "id": "s24_f20",
+        "type": "choice",
+        "label": "Are you out of a medicine you need, or close to running out?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s24_f21",
+        "type": "text",
+        "label": "Which medicine? About how much is left, if you know?",
+        "options": []
+      },
+      {
+        "id": "s24_f22",
+        "type": "choice",
+        "label": "Does anyone help you get or take your medicines now?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "id": "s24_f23",
+        "type": "text",
+        "label": "Who helps, and what do they help with?",
+        "options": []
+      },
+      {
+        "id": "s24_f24",
+        "type": "text",
+        "label": "What extra help would make things easier?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "title": "How have you been feeling?",
+    "source": "You can answer privately with staff. You do not need to describe upsetting experiences in detail.\nFor each question, choose: Now / In the past / Both / No / Not sure / Skip.\nHave you had times when…\n* You felt very sad, hopeless, or had major changes in mood? __________\n* You felt very worried, afraid, or affected by a frightening experience? __________\n* You heard or saw things other people did not seem to hear or see? __________\n* You had thoughts or beliefs that others did not share or found hard to understand? __________\n* Your thoughts felt very confused or hard to organize? __________\n* Remembering things or concentrating was difficult? __________\n* You thought about suicide or hurting yourself? __________\n* You tried to end your life or hurt yourself? __________\n* You thought about seriously hurting someone else? __________\n* You tried to seriously hurt someone else? __________\n* You acted aggressively or physically hurt someone? __________\n* You deliberately set a fire that could harm someone or damage property? __________\n* Someone sexually hurt or assaulted you? __________\n* You experienced another kind of abuse or deeply upsetting event? __________\nAnything else about how you are feeling that you want us to know?\n\nIs there a safety concern you need help with now?\n\nWhat helps you feel safer or calmer?\n\nDo you have a safety plan or someone you contact when things are difficult?\n\nStaff should respond to urgent concerns right away through the appropriate process. These questions do not replace a clinical safety assessment.",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "You can answer privately with staff. You do not need to describe upsetting experiences in detail."
+      },
+      {
+        "type": "note",
+        "text": "For each question, choose: Now / In the past / Both / No / Not sure / Skip."
+      },
+      {
+        "type": "note",
+        "text": "Have you had times when…"
+      },
+      {
+        "id": "s25_f1",
+        "type": "choice",
+        "label": "You felt very sad, hopeless, or had major changes in mood?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f2",
+        "type": "choice",
+        "label": "You felt very worried, afraid, or affected by a frightening experience?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f3",
+        "type": "choice",
+        "label": "You heard or saw things other people did not seem to hear or see?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f4",
+        "type": "choice",
+        "label": "You had thoughts or beliefs that others did not share or found hard to understand?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f5",
+        "type": "choice",
+        "label": "Your thoughts felt very confused or hard to organize?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f6",
+        "type": "choice",
+        "label": "Remembering things or concentrating was difficult?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f7",
+        "type": "choice",
+        "label": "You thought about suicide or hurting yourself?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f8",
+        "type": "choice",
+        "label": "You tried to end your life or hurt yourself?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f9",
+        "type": "choice",
+        "label": "You thought about seriously hurting someone else?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f10",
+        "type": "choice",
+        "label": "You tried to seriously hurt someone else?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f11",
+        "type": "choice",
+        "label": "You acted aggressively or physically hurt someone?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f12",
+        "type": "choice",
+        "label": "You deliberately set a fire that could harm someone or damage property?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f13",
+        "type": "choice",
+        "label": "Someone sexually hurt or assaulted you?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f14",
+        "type": "choice",
+        "label": "You experienced another kind of abuse or deeply upsetting event?",
+        "options": ["Now", "In the past", "Both", "No", "Not sure", "Skip"]
+      },
+      {
+        "id": "s25_f15",
+        "type": "text",
+        "label": "Anything else about how you are feeling that you want us to know?",
+        "options": []
+      },
+      {
+        "id": "s25_f16",
+        "type": "text",
+        "label": "Is there a safety concern you need help with now?",
+        "options": []
+      },
+      {
+        "id": "s25_f17",
+        "type": "text",
+        "label": "What helps you feel safer or calmer?",
+        "options": []
+      },
+      {
+        "id": "s25_f18",
+        "type": "text",
+        "label": "Do you have a safety plan or someone you contact when things are difficult?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Staff should respond to urgent concerns right away through the appropriate process. These questions do not replace a clinical safety assessment."
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "title": "Have you gotten mental health support before?",
+    "source": "☐ I get support now\n☐ I got support in the past\n☐ Both\n☐ No\n☐ I’m not sure\nFor each provider or program:\nName: __________\nPhone/address, if known: __________\nType of help: __________\nAbout when: __________\nHave you stayed in a hospital for mental health support?\n☐ Yes ☐ No ☐ I’d rather talk privately\nHospital and approximate dates: __________\nReason, if you wish to share: __________\nHelp needed after leaving: __________\nWhat support helped you?\n\nWhat did not work well for you?\n\nWhat would you like help with now?\n\nMedicines for mental health\n\nDo you take medicine to help with your mood, sleep, thoughts, or other mental health needs?\n☐ Yes ☐ No ☐ I’m not sure ☐ I’d rather talk privately\n\nIf you already listed it in Section 24, you do not need to list it again.\n\nIs there another medicine we should add?\nStaff can help record the name, dose, how often you take it, and provider if known.\n\n| Medicine name | Dose, if known | How often | Provider, if known |\n| --- | --- | --- | --- |\n| __________ | __________ | __________ | __________ |\n| __________ | __________ | __________ | __________ |\n\nIs the medicine helping in the way you hoped?\n☐ Yes ☐ Somewhat ☐ No ☐ I’m not sure\n\nIs there anything you want help discussing with your provider?\nFor example: side effects, getting refills, or difficulty taking it.\n__________",
+    "blocks": [
+      {
+        "id": "s26_f1",
+        "type": "choice",
+        "label": "Have you gotten mental health support before?",
+        "options": [
+          "I get support now",
+          "I got support in the past",
+          "Both",
+          "No",
+          "I’m not sure"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "For each provider or program:"
+      },
+      {
+        "id": "s26_f2",
+        "type": "text",
+        "label": "Name",
+        "options": []
+      },
+      {
+        "id": "s26_f3",
+        "type": "text",
+        "label": "Phone/address, if known",
+        "options": []
+      },
+      {
+        "id": "s26_f4",
+        "type": "text",
+        "label": "Type of help",
+        "options": []
+      },
+      {
+        "id": "s26_f5",
+        "type": "text",
+        "label": "About when",
+        "options": []
+      },
+      {
+        "id": "s26_f6",
+        "type": "choice",
+        "label": "Have you stayed in a hospital for mental health support?",
+        "options": ["Yes", "No", "I’d rather talk privately"]
+      },
+      {
+        "id": "s26_f7",
+        "type": "text",
+        "label": "Hospital and approximate dates",
+        "options": []
+      },
+      {
+        "id": "s26_f8",
+        "type": "text",
+        "label": "Reason, if you wish to share",
+        "options": []
+      },
+      {
+        "id": "s26_f9",
+        "type": "text",
+        "label": "Help needed after leaving",
+        "options": []
+      },
+      {
+        "id": "s26_f10",
+        "type": "text",
+        "label": "What support helped you?",
+        "options": []
+      },
+      {
+        "id": "s26_f11",
+        "type": "text",
+        "label": "What did not work well for you?",
+        "options": []
+      },
+      {
+        "id": "s26_f12",
+        "type": "text",
+        "label": "What would you like help with now?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Medicines for mental health"
+      },
+      {
+        "id": "s26_f13",
+        "type": "choice",
+        "label": "Do you take medicine to help with your mood, sleep, thoughts, or other mental health needs?",
+        "options": ["Yes", "No", "I’m not sure", "I’d rather talk privately"]
+      },
+      {
+        "type": "note",
+        "text": "If you already listed it in Section 24, you do not need to list it again."
+      },
+      {
+        "id": "s26_f14",
+        "type": "text",
+        "label": "Is there another medicine we should add?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Staff can help record the name, dose, how often you take it, and provider if known."
+      },
+      {
+        "id": "s26_medications",
+        "type": "repeat",
+        "label": "Other medicines not already listed",
+        "options": [
+          "Medicine name",
+          "Dose, if known",
+          "How often",
+          "Provider, if known"
+        ]
+      },
+      {
+        "id": "s26_f16",
+        "type": "choice",
+        "label": "Is the medicine helping in the way you hoped?",
+        "options": ["Yes", "Somewhat", "No", "I’m not sure"]
+      },
+      {
+        "id": "s26_f17",
+        "type": "text",
+        "label": "Is there anything you want help discussing with your provider?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "For example: side effects, getting refills, or difficulty taking it."
+      }
+    ]
+  },
+  {
+    "number": 27,
+    "title": "Would you like help related to alcohol or drugs?",
+    "source": "☐ Yes ☐ Maybe ☐ No ☐ I’d rather talk privately\nHas alcohol or drug use caused concerns for you?\n☐ Now ☐ In the past ☐ Both ☐ No ☐ I’m not sure\nIf you are comfortable sharing, tell us about each substance:\nSubstance: __________\nAbout how often/how much: __________\nAbout when you last used it: __________\nHow it affects everyday life: __________\nHave you had an overdose, felt sick when stopping, or had another urgent concern?\n\nHas use affected housing, relationships, work, health, or legal matters?",
+    "blocks": [
+      {
+        "id": "s27_f1",
+        "type": "choice",
+        "label": "Would you like help related to alcohol or drugs?",
+        "options": ["Yes", "Maybe", "No", "I’d rather talk privately"]
+      },
+      {
+        "id": "s27_f2",
+        "type": "choice",
+        "label": "Has alcohol or drug use caused concerns for you?",
+        "options": ["Now", "In the past", "Both", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "If you are comfortable sharing, tell us about each substance:"
+      },
+      {
+        "id": "s27_f3",
+        "type": "text",
+        "label": "Substance",
+        "options": []
+      },
+      {
+        "id": "s27_f4",
+        "type": "text",
+        "label": "About how often/how much",
+        "options": []
+      },
+      {
+        "id": "s27_f5",
+        "type": "text",
+        "label": "About when you last used it",
+        "options": []
+      },
+      {
+        "id": "s27_f6",
+        "type": "text",
+        "label": "How it affects everyday life",
+        "options": []
+      },
+      {
+        "id": "s27_f7",
+        "type": "text",
+        "label": "Have you had an overdose, felt sick when stopping, or had another urgent concern?",
+        "options": []
+      },
+      {
+        "id": "s27_f8",
+        "type": "text",
+        "label": "Has use affected housing, relationships, work, health, or legal matters?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "title": "What recovery support works for you?",
+    "source": "Have you received alcohol or drug treatment?\n☐ Now ☐ In the past ☐ Both ☐ No ☐ I’m not sure\nProvider/program: __________\nPhone/address, if known: __________\nType of treatment and approximate dates: __________\nWas it helpful? What would you change?\n\nDo you take part in any support groups or recovery programs?\n☐ Peer support ☐ 12-step/mutual-help group\n☐ Counseling ☐ Another program: __________\n☐ None right now\nMedicines used in alcohol or drug treatment\n\nDo you take medicine as part of alcohol or drug treatment?\n☐ Yes ☐ No ☐ I’m not sure ☐ I’d rather talk privately\n\nIf you already listed it in Section 24, you do not need to list it again.\n\nIs there another medicine we should add?\n\n| Medicine name | Dose, if known | How often | Provider/program, if known |\n| --- | --- | --- | --- |\n| __________ | __________ | __________ | __________ |\n| __________ | __________ | __________ | __________ |\n\nDo you need help reaching the provider, getting the medicine, or getting to appointments?\n__________\n\nWould you like to talk with a healthcare provider about medicine that may support your treatment or recovery?\n☐ Yes ☐ No ☐ Maybe ☐ I’d rather talk privately\n\nIf cutting back or stopping is one of your goals, how has that been going?\n\nWhat kind of support would you prefer?\n\nWhat might make getting support difficult?",
+    "blocks": [
+      {
+        "id": "s28_f1",
+        "type": "choice",
+        "label": "Have you received alcohol or drug treatment?",
+        "options": ["Now", "In the past", "Both", "No", "I’m not sure"]
+      },
+      {
+        "id": "s28_f2",
+        "type": "text",
+        "label": "Provider/program",
+        "options": []
+      },
+      {
+        "id": "s28_f3",
+        "type": "text",
+        "label": "Phone/address, if known",
+        "options": []
+      },
+      {
+        "id": "s28_f4",
+        "type": "text",
+        "label": "Type of treatment and approximate dates",
+        "options": []
+      },
+      {
+        "id": "s28_f5",
+        "type": "text",
+        "label": "Was it helpful? What would you change?",
+        "options": []
+      },
+      {
+        "id": "s28_f6",
+        "type": "choice",
+        "label": "Do you take part in any support groups or recovery programs?",
+        "options": [
+          "Peer support",
+          "12-step/mutual-help group",
+          "Counseling",
+          "Another program",
+          "None right now"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Medicines used in alcohol or drug treatment"
+      },
+      {
+        "id": "s28_f7",
+        "type": "choice",
+        "label": "Do you take medicine as part of alcohol or drug treatment?",
+        "options": ["Yes", "No", "I’m not sure", "I’d rather talk privately"]
+      },
+      {
+        "type": "note",
+        "text": "If you already listed it in Section 24, you do not need to list it again."
+      },
+      {
+        "id": "s28_f8",
+        "type": "text",
+        "label": "Is there another medicine we should add?",
+        "options": []
+      },
+      {
+        "id": "s28_medications",
+        "type": "repeat",
+        "label": "Other medicines not already listed",
+        "options": [
+          "Medicine name",
+          "Dose, if known",
+          "How often",
+          "Provider/program, if known"
+        ]
+      },
+      {
+        "id": "s28_f10",
+        "type": "text",
+        "label": "Do you need help reaching the provider, getting the medicine, or getting to appointments?",
+        "options": []
+      },
+      {
+        "id": "s28_f11",
+        "type": "choice",
+        "label": "Would you like to talk with a healthcare provider about medicine that may support your treatment or recovery?",
+        "options": ["Yes", "No", "Maybe", "I’d rather talk privately"]
+      },
+      {
+        "id": "s28_f12",
+        "type": "text",
+        "label": "If cutting back or stopping is one of your goals, how has that been going?",
+        "options": []
+      },
+      {
+        "id": "s28_f13",
+        "type": "text",
+        "label": "What kind of support would you prefer?",
+        "options": []
+      },
+      {
+        "id": "s28_f14",
+        "type": "text",
+        "label": "What might make getting support difficult?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "title": "What helps you feel connected?",
+    "source": "Are there people, groups, or activities you enjoy?\n\nDo you take part in community, cultural, faith, or spiritual activities?\nShare only if you want to.\n\nDo you sometimes feel alone or have trouble joining activities?\n☐ Yes ☐ No ☐ Sometimes\nWhat connections or activities would you like help finding?",
+    "blocks": [
+      {
+        "id": "s29_f1",
+        "type": "text",
+        "label": "Are there people, groups, or activities you enjoy?",
+        "options": []
+      },
+      {
+        "id": "s29_f2",
+        "type": "text",
+        "label": "Do you take part in community, cultural, faith, or spiritual activities?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Share only if you want to."
+      },
+      {
+        "id": "s29_f3",
+        "type": "choice",
+        "label": "Do you sometimes feel alone or have trouble joining activities?",
+        "options": ["Yes", "No", "Sometimes"]
+      },
+      {
+        "id": "s29_f4",
+        "type": "text",
+        "label": "What connections or activities would you like help finding?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "title": "Do you get money or benefits for everyday needs?",
+    "source": "☐ Yes ☐ No ☐ I’m not sure ☐ I’d rather talk with staff\nDoes anyone else in your household receive money or benefits?\n☐ Yes ☐ No ☐ I’m not sure\nWhich sources apply?\n☐ Work or self-employment\n☐ SSI\n☐ SSDI\n☐ Retirement/Social Security\n☐ General assistance\n☐ TANF/cash assistance\n☐ Child support\n☐ Alimony\n☐ Veteran benefits\n☐ Unemployment\n☐ SNAP/food benefits\n☐ Something else: __________\n☐ No current money or benefits\nStaff can explain unfamiliar benefit names.\nFor each source:\nWho receives it: __________\nSource: __________\nAbout how much: __________\nHow often: ☐ Weekly ☐ Every two weeks ☐ Monthly ☐ Other\nStatus: ☐ Receiving ☐ Applied/waiting ☐ Denied ☐ Renewal needed\nApplication or renewal date, if known: __________\nAbout how much cash income do you receive in a month? $_____\n☐ Not sure ☐ Skip\nAbout how much cash income does your whole household receive in a month? $_____\n☐ Not sure ☐ Skip\nStaff will record food benefits and other noncash help separately.\nDoes anyone need help with health coverage or another benefit?",
+    "blocks": [
+      {
+        "id": "s30_f1",
+        "type": "choice",
+        "label": "Do you get money or benefits for everyday needs?",
+        "options": ["Yes", "No", "I’m not sure", "I’d rather talk with staff"]
+      },
+      {
+        "id": "s30_f2",
+        "type": "choice",
+        "label": "Does anyone else in your household receive money or benefits?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s30_f3",
+        "type": "choice",
+        "label": "Which sources apply?",
+        "options": [
+          "Work or self-employment",
+          "SSI",
+          "SSDI",
+          "Retirement/Social Security",
+          "General assistance",
+          "TANF/cash assistance",
+          "Child support",
+          "Alimony",
+          "Veteran benefits",
+          "Unemployment",
+          "SNAP/food benefits",
+          "Something else",
+          "No current money or benefits"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Staff can explain unfamiliar benefit names."
+      },
+      {
+        "type": "note",
+        "text": "For each source:"
+      },
+      {
+        "id": "s30_f4",
+        "type": "text",
+        "label": "Who receives it",
+        "options": []
+      },
+      {
+        "id": "s30_f5",
+        "type": "text",
+        "label": "Source",
+        "options": []
+      },
+      {
+        "id": "s30_f6",
+        "type": "text",
+        "label": "About how much",
+        "options": []
+      },
+      {
+        "id": "s30_f7",
+        "type": "choice",
+        "label": "How often",
+        "options": ["Weekly", "Every two weeks", "Monthly", "Other"]
+      },
+      {
+        "id": "s30_f8",
+        "type": "choice",
+        "label": "Status",
+        "options": ["Receiving", "Applied/waiting", "Denied", "Renewal needed"]
+      },
+      {
+        "id": "s30_f9",
+        "type": "text",
+        "label": "Application or renewal date, if known",
+        "options": []
+      },
+      {
+        "id": "s30_f10",
+        "type": "choice",
+        "label": "About how much cash income do you receive in a month?",
+        "options": ["Not sure", "Skip"]
+      },
+      {
+        "id": "s30_f11",
+        "type": "choice",
+        "label": "About how much cash income does your whole household receive in a month?",
+        "options": ["Not sure", "Skip"]
+      },
+      {
+        "type": "note",
+        "text": "Staff will record food benefits and other noncash help separately."
+      },
+      {
+        "id": "s30_f12",
+        "type": "text",
+        "label": "Does anyone need help with health coverage or another benefit?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "title": "Are bills or basic needs causing stress?",
+    "source": "Are you behind on bills or paying back money you owe?\n☐ Yes ☐ No ☐ I’m not sure\nWhat kind of bill or debt? __________\nAbout how much, if known? __________\nHow is it affecting you? __________\nWhat regular costs do you pay?\n☐ Housing ☐ Utilities ☐ Child support/alimony\n☐ Transportation ☐ Childcare/caregiving\n☐ Other: __________\nAmounts, if you know and want to share:\n\nDo you have enough food, clothes, and personal-care supplies?\n☐ Yes ☐ No ☐ Sometimes\nWhat would help most?",
+    "blocks": [
+      {
+        "id": "s31_f1",
+        "type": "choice",
+        "label": "Are you behind on bills or paying back money you owe?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s31_f2",
+        "type": "text",
+        "label": "What kind of bill or debt?",
+        "options": []
+      },
+      {
+        "id": "s31_f3",
+        "type": "text",
+        "label": "About how much, if known?",
+        "options": []
+      },
+      {
+        "id": "s31_f4",
+        "type": "text",
+        "label": "How is it affecting you?",
+        "options": []
+      },
+      {
+        "id": "s31_f5",
+        "type": "choice",
+        "label": "What regular costs do you pay?",
+        "options": [
+          "Housing",
+          "Utilities",
+          "Child support/alimony",
+          "Transportation",
+          "Childcare/caregiving",
+          "Other"
+        ]
+      },
+      {
+        "id": "s31_f6",
+        "type": "text",
+        "label": "Amounts, if you know and want to share",
+        "options": []
+      },
+      {
+        "id": "s31_f7",
+        "type": "choice",
+        "label": "Do you have enough food, clothes, and personal-care supplies?",
+        "options": ["Yes", "No", "Sometimes"]
+      },
+      {
+        "id": "s31_f8",
+        "type": "text",
+        "label": "What would help most?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 32,
+    "title": "Are you working now?",
+    "source": "☐ Full-time\n☐ Part-time\n☐ Working for myself\n☐ Not working and looking for work\n☐ Not looking right now\n☐ Not able to work right now\n☐ Retired\nIf working:\nEmployer/type of work: __________\nJob or tasks: __________\nAbout when you started: __________\nHours each week: __________\nPay rate, if you wish to share: __________\nBenefits, if any: __________\nWhat work have you done before?\nFor each job or type of work:\nWork/employer: __________\nAbout when: __________\nSkills or tasks: __________\nReason for leaving, if relevant: __________",
+    "blocks": [
+      {
+        "id": "s32_f1",
+        "type": "choice",
+        "label": "Are you working now?",
+        "options": [
+          "Full-time",
+          "Part-time",
+          "Working for myself",
+          "Not working and looking for work",
+          "Not looking right now",
+          "Not able to work right now",
+          "Retired"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "If working:"
+      },
+      {
+        "id": "s32_f2",
+        "type": "text",
+        "label": "Employer/type of work",
+        "options": []
+      },
+      {
+        "id": "s32_f3",
+        "type": "text",
+        "label": "Job or tasks",
+        "options": []
+      },
+      {
+        "id": "s32_f4",
+        "type": "text",
+        "label": "About when you started",
+        "options": []
+      },
+      {
+        "id": "s32_f5",
+        "type": "text",
+        "label": "Hours each week",
+        "options": []
+      },
+      {
+        "id": "s32_f6",
+        "type": "text",
+        "label": "Pay rate, if you wish to share",
+        "options": []
+      },
+      {
+        "id": "s32_f7",
+        "type": "text",
+        "label": "Benefits, if any",
+        "options": []
+      },
+      {
+        "id": "s32_f8",
+        "type": "text",
+        "label": "What work have you done before?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "For each job or type of work:"
+      },
+      {
+        "id": "s32_f9",
+        "type": "text",
+        "label": "Work/employer",
+        "options": []
+      },
+      {
+        "id": "s32_f10",
+        "type": "text",
+        "label": "About when",
+        "options": []
+      },
+      {
+        "id": "s32_f11",
+        "type": "text",
+        "label": "Skills or tasks",
+        "options": []
+      },
+      {
+        "id": "s32_f12",
+        "type": "text",
+        "label": "Reason for leaving, if relevant",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 33,
+    "title": "Would you like help finding or keeping a job?",
+    "source": "☐ Yes ☐ No ☐ Maybe later ☐ I’m not sure\nWhat kind of work interests you?\n\nWhat days or hours could you work?\n\nWould any of these help?\n☐ Choosing a job or career path\n☐ Job training or a certificate\n☐ Writing a résumé\n☐ Filling out applications\n☐ Practicing interviews\n☐ Finding job openings\n☐ Support after starting a job\n☐ Changes or accommodations at work\n☐ Work clothes or equipment\n☐ Something else: __________\nAre you in a job-training or employment program now?\n☐ Yes ☐ No ☐ I’m not sure\nProgram name: __________\nWould you like to join one?\n☐ Yes ☐ No ☐ Maybe\nWhat could make working difficult?\n☐ Transportation ☐ Childcare/caregiving ☐ Health\n☐ Housing ☐ Needed documents ☐ Legal history\n☐ Something else: __________",
+    "blocks": [
+      {
+        "id": "s33_f1",
+        "type": "choice",
+        "label": "Would you like help finding or keeping a job?",
+        "options": ["Yes", "No", "Maybe later", "I’m not sure"]
+      },
+      {
+        "id": "s33_f2",
+        "type": "text",
+        "label": "What kind of work interests you?",
+        "options": []
+      },
+      {
+        "id": "s33_f3",
+        "type": "text",
+        "label": "What days or hours could you work?",
+        "options": []
+      },
+      {
+        "id": "s33_f4",
+        "type": "choice",
+        "label": "Would any of these help?",
+        "options": [
+          "Choosing a job or career path",
+          "Job training or a certificate",
+          "Writing a résumé",
+          "Filling out applications",
+          "Practicing interviews",
+          "Finding job openings",
+          "Support after starting a job",
+          "Changes or accommodations at work",
+          "Work clothes or equipment",
+          "Something else"
+        ]
+      },
+      {
+        "id": "s33_f5",
+        "type": "choice",
+        "label": "Are you in a job-training or employment program now?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "id": "s33_f6",
+        "type": "text",
+        "label": "Program name",
+        "options": []
+      },
+      {
+        "id": "s33_f7",
+        "type": "choice",
+        "label": "Would you like to join one?",
+        "options": ["Yes", "No", "Maybe"]
+      },
+      {
+        "id": "s33_f8",
+        "type": "choice",
+        "label": "What could make working difficult?",
+        "options": [
+          "Transportation",
+          "Childcare/caregiving",
+          "Health",
+          "Housing",
+          "Needed documents",
+          "Legal history",
+          "Something else"
+        ]
+      }
+    ]
+  },
+  {
+    "number": 34,
+    "title": "What learning would you like to do?",
+    "source": "What is the last grade or school program you finished?\n\nDo you have a diploma, degree, license, or certificate?\n\nAre you in school or training now?\n☐ Yes ☐ No\nSchool/program: __________\n☐ Full-time ☐ Part-time ☐ Another schedule\nExpected completion, if known: __________\nHow is it going?\n\nWould you like to start or return to school or training?\n☐ Now ☐ Later ☐ No ☐ I’m not sure\nWhat would you like to learn or finish?\n\nWould you like help with reading, writing, math, or learning in another language?\n☐ Yes ☐ No ☐ I’d rather talk privately\nHow do you learn best?\n☐ Someone showing me\n☐ Practicing with help\n☐ Listening\n☐ Reading\n☐ Videos\n☐ Another way: __________\nWhat could make attending or finishing difficult?\n\nHave you tried other training programs? What happened?",
+    "blocks": [
+      {
+        "id": "s34_f1",
+        "type": "text",
+        "label": "What is the last grade or school program you finished?",
+        "options": []
+      },
+      {
+        "id": "s34_f2",
+        "type": "text",
+        "label": "Do you have a diploma, degree, license, or certificate?",
+        "options": []
+      },
+      {
+        "id": "s34_f3",
+        "type": "choice",
+        "label": "Are you in school or training now?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "id": "s34_f4",
+        "type": "choice",
+        "label": "School/program",
+        "options": ["Full-time", "Part-time", "Another schedule"]
+      },
+      {
+        "id": "s34_f5",
+        "type": "text",
+        "label": "Expected completion, if known",
+        "options": []
+      },
+      {
+        "id": "s34_f6",
+        "type": "text",
+        "label": "How is it going?",
+        "options": []
+      },
+      {
+        "id": "s34_f7",
+        "type": "choice",
+        "label": "Would you like to start or return to school or training?",
+        "options": ["Now", "Later", "No", "I’m not sure"]
+      },
+      {
+        "id": "s34_f8",
+        "type": "text",
+        "label": "What would you like to learn or finish?",
+        "options": []
+      },
+      {
+        "id": "s34_f9",
+        "type": "choice",
+        "label": "Would you like help with reading, writing, math, or learning in another language?",
+        "options": ["Yes", "No", "I’d rather talk privately"]
+      },
+      {
+        "id": "s34_f10",
+        "type": "choice",
+        "label": "How do you learn best?",
+        "options": [
+          "Someone showing me",
+          "Practicing with help",
+          "Listening",
+          "Reading",
+          "Videos",
+          "Another way"
+        ]
+      },
+      {
+        "id": "s34_f11",
+        "type": "text",
+        "label": "What could make attending or finishing difficult?",
+        "options": []
+      },
+      {
+        "id": "s34_f12",
+        "type": "text",
+        "label": "Have you tried other training programs? What happened?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "title": "Do you have the technology you need?",
+    "source": "Do you have a phone, tablet, or computer you can use?\n☐ My own ☐ Shared ☐ Borrowed ☐ None\nWhat kind? __________\nDoes it work well enough for what you need?\n☐ Yes ☐ No ☐ Sometimes\nCan you get online when you need to?\n☐ Usually ☐ Sometimes ☐ No\nWhat makes it hard?\n☐ Cost ☐ Broken/missing equipment ☐ Weak/no internet\n☐ Not sure how to use it ☐ Accessibility needs\n☐ Something else: __________",
+    "blocks": [
+      {
+        "id": "s35_f1",
+        "type": "choice",
+        "label": "Do you have a phone, tablet, or computer you can use?",
+        "options": ["My own", "Shared", "Borrowed", "None"]
+      },
+      {
+        "id": "s35_f2",
+        "type": "text",
+        "label": "What kind?",
+        "options": []
+      },
+      {
+        "id": "s35_f3",
+        "type": "choice",
+        "label": "Does it work well enough for what you need?",
+        "options": ["Yes", "No", "Sometimes"]
+      },
+      {
+        "id": "s35_f4",
+        "type": "choice",
+        "label": "Can you get online when you need to?",
+        "options": ["Usually", "Sometimes", "No"]
+      },
+      {
+        "id": "s35_f5",
+        "type": "choice",
+        "label": "What makes it hard?",
+        "options": [
+          "Cost",
+          "Broken/missing equipment",
+          "Weak/no internet",
+          "Not sure how to use it",
+          "Accessibility needs",
+          "Something else"
+        ]
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "title": "What would you like help doing with technology?",
+    "source": "For each, choose: I can do this / Some help / A lot of help / Have not tried / Not interested right now.\n* Sending email or messages: __________\n* Filling out forms online: __________\n* Taking an online class: __________\n* Writing documents or using spreadsheets: __________\n* Finding jobs or sending a résumé: __________\n* Having a healthcare visit online: __________\n* Staying safe and protecting information online: __________\n* Using AI tools, such as ChatGPT, for learning or work: __________\n* Something else: __________\nWhat would you most like to learn?",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "For each, choose: I can do this / Some help / A lot of help / Have not tried / Not interested right now."
+      },
+      {
+        "id": "s36_f1",
+        "type": "choice",
+        "label": "Sending email or messages",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f2",
+        "type": "choice",
+        "label": "Filling out forms online",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f3",
+        "type": "choice",
+        "label": "Taking an online class",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f4",
+        "type": "choice",
+        "label": "Writing documents or using spreadsheets",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f5",
+        "type": "choice",
+        "label": "Finding jobs or sending a résumé",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f6",
+        "type": "choice",
+        "label": "Having a healthcare visit online",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f7",
+        "type": "choice",
+        "label": "Staying safe and protecting information online",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f8",
+        "type": "choice",
+        "label": "Using AI tools, such as ChatGPT, for learning or work",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f9",
+        "type": "choice",
+        "label": "Something else",
+        "options": [
+          "I can do this",
+          "Some help",
+          "A lot of help",
+          "Have not tried",
+          "Not interested right now"
+        ]
+      },
+      {
+        "id": "s36_f10",
+        "type": "text",
+        "label": "What would you most like to learn?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "title": "Are legal matters affecting your needs?",
+    "source": "You may answer privately with staff.\nDo you have a legal matter or court date coming up?\n☐ Yes ☐ No ☐ I’d rather skip this\nWhat should staff know to help you?\n\nImportant dates: __________\nDo you have an attorney or legal advocate?\n☐ Yes ☐ No\nName/organization: __________\nPhone/address: __________\nAre you on probation? ☐ Yes ☐ No\nAre you on parole? ☐ Yes ☐ No\nOfficer/agency, if relevant: __________\nContact information: __________\nRequirements that affect services: __________\nHave past arrests, convictions, or time in jail/prison created needs you want help with?\n\nRelease date, if relevant: __________\nHelp needed after release: __________",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "You may answer privately with staff."
+      },
+      {
+        "id": "s37_f1",
+        "type": "choice",
+        "label": "Do you have a legal matter or court date coming up?",
+        "options": ["Yes", "No", "I’d rather skip this"]
+      },
+      {
+        "id": "s37_f2",
+        "type": "text",
+        "label": "What should staff know to help you?",
+        "options": []
+      },
+      {
+        "id": "s37_f3",
+        "type": "text",
+        "label": "Important dates",
+        "options": []
+      },
+      {
+        "id": "s37_f4",
+        "type": "choice",
+        "label": "Do you have an attorney or legal advocate?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "id": "s37_f5",
+        "type": "text",
+        "label": "Name/organization",
+        "options": []
+      },
+      {
+        "id": "s37_f6",
+        "type": "text",
+        "label": "Phone/address",
+        "options": []
+      },
+      {
+        "id": "s37_f7",
+        "type": "choice",
+        "label": "Are you on probation?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "id": "s37_f8",
+        "type": "choice",
+        "label": "Are you on parole?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "id": "s37_f9",
+        "type": "text",
+        "label": "Officer/agency, if relevant",
+        "options": []
+      },
+      {
+        "id": "s37_f10",
+        "type": "text",
+        "label": "Contact information",
+        "options": []
+      },
+      {
+        "id": "s37_f11",
+        "type": "text",
+        "label": "Requirements that affect services",
+        "options": []
+      },
+      {
+        "id": "s37_f12",
+        "type": "text",
+        "label": "Have past arrests, convictions, or time in jail/prison created needs you want help with?",
+        "options": []
+      },
+      {
+        "id": "s37_f13",
+        "type": "text",
+        "label": "Release date, if relevant",
+        "options": []
+      },
+      {
+        "id": "s37_f14",
+        "type": "text",
+        "label": "Help needed after release",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 38,
+    "title": "Does someone have legal authority to help make decisions for you?",
+    "source": "☐ Yes ☐ No ☐ I’m not sure\nFor example, a guardian, conservator, or someone appointed to manage benefits.\nTheir name: __________\nPhone/address: __________\nWhat do they help decide or manage?\n☐ Personal decisions\n☐ Money or benefits\n☐ Both\n☐ Something else: __________\nAre there limits to what they can do?\n\nIs paperwork available?\n☐ Yes ☐ No ☐ I’m not sure\nStaff can help identify the person’s role and any needed documents.",
+    "blocks": [
+      {
+        "id": "s38_f1",
+        "type": "choice",
+        "label": "Does someone have legal authority to help make decisions for you?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "For example, a guardian, conservator, or someone appointed to manage benefits."
+      },
+      {
+        "id": "s38_f2",
+        "type": "text",
+        "label": "Their name",
+        "options": []
+      },
+      {
+        "id": "s38_f3",
+        "type": "text",
+        "label": "Phone/address",
+        "options": []
+      },
+      {
+        "id": "s38_f4",
+        "type": "choice",
+        "label": "What do they help decide or manage?",
+        "options": [
+          "Personal decisions",
+          "Money or benefits",
+          "Both",
+          "Something else"
+        ]
+      },
+      {
+        "id": "s38_f5",
+        "type": "text",
+        "label": "Are there limits to what they can do?",
+        "options": []
+      },
+      {
+        "id": "s38_f6",
+        "type": "choice",
+        "label": "Is paperwork available?",
+        "options": ["Yes", "No", "I’m not sure"]
+      },
+      {
+        "type": "note",
+        "text": "Staff can help identify the person’s role and any needed documents."
+      }
+    ]
+  },
+  {
+    "number": 39,
+    "title": "What everyday things would you like help with?",
+    "source": "For each, choose: I manage this / Some help / A lot of help / Does not apply.\n* Paying rent or utilities: __________\n* Understanding and following housing rules: __________\n* Cleaning or doing laundry: __________\n* Managing money: __________\n* Driving or using transportation: __________\n* Getting things repaired where I live: __________\n* Getting mental health support: __________\n* Getting medical care: __________\n* Applying for or keeping benefits: __________\n* Making meals: __________\n* Shopping for food or supplies: __________\n* Understanding and following medicine instructions: __________\n* Remembering when to take medicines: __________\n* Getting prescriptions and refills: __________\n* Getting medicines from the pharmacy: __________\n* Keeping medicines safely stored: __________\n* Connecting or communicating with people: __________\n* Bathing or other personal care: __________\n* Something else: __________\nWhich things do you feel good about doing?\n\nWhere would help make the biggest difference?\n\nStaff: Use the medication list in Section 24. Add new information from Sections 26 and 28 to that same list, and confirm updates with the participant. Keep “unknown” separate from “none.”",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "For each, choose: I manage this / Some help / A lot of help / Does not apply."
+      },
+      {
+        "id": "s39_f1",
+        "type": "choice",
+        "label": "Paying rent or utilities",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f2",
+        "type": "choice",
+        "label": "Understanding and following housing rules",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f3",
+        "type": "choice",
+        "label": "Cleaning or doing laundry",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f4",
+        "type": "choice",
+        "label": "Managing money",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f5",
+        "type": "choice",
+        "label": "Driving or using transportation",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f6",
+        "type": "choice",
+        "label": "Getting things repaired where I live",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f7",
+        "type": "choice",
+        "label": "Getting mental health support",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f8",
+        "type": "choice",
+        "label": "Getting medical care",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f9",
+        "type": "choice",
+        "label": "Applying for or keeping benefits",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f10",
+        "type": "choice",
+        "label": "Making meals",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f11",
+        "type": "choice",
+        "label": "Shopping for food or supplies",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f12",
+        "type": "choice",
+        "label": "Understanding and following medicine instructions",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f13",
+        "type": "choice",
+        "label": "Remembering when to take medicines",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f14",
+        "type": "choice",
+        "label": "Getting prescriptions and refills",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f15",
+        "type": "choice",
+        "label": "Getting medicines from the pharmacy",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f16",
+        "type": "choice",
+        "label": "Keeping medicines safely stored",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f17",
+        "type": "choice",
+        "label": "Connecting or communicating with people",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f18",
+        "type": "choice",
+        "label": "Bathing or other personal care",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f19",
+        "type": "choice",
+        "label": "Something else",
+        "options": [
+          "I manage this",
+          "Some help",
+          "A lot of help",
+          "Does not apply",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "s39_f20",
+        "type": "text",
+        "label": "Which things do you feel good about doing?",
+        "options": []
+      },
+      {
+        "id": "s39_f21",
+        "type": "text",
+        "label": "Where would help make the biggest difference?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Staff: Use the medication list in Section 24. Add new information from Sections 26 and 28 to that same list, and confirm updates with the participant. Keep “unknown” separate from “none.”"
+      }
+    ]
+  },
+  {
+    "number": 40,
+    "title": "What is going well, and what would you like to change?",
+    "source": "What are you good at or proud of?\n\nWhat interests you or brings you comfort?\n\nWhat helps you keep going when things are difficult?\n\nWhat are up to three things you want to work toward?\n1. \n\n\n\n2. \n\n\n\n3. \n\n\n\nHow would you know things were getting better?\n\nWhat would make it easier to work with The Lotus Foundation?\n\nIs there anything else you want us to understand?",
+    "blocks": [
+      {
+        "id": "s40_f1",
+        "type": "text",
+        "label": "What are you good at or proud of?",
+        "options": []
+      },
+      {
+        "id": "s40_f2",
+        "type": "text",
+        "label": "What interests you or brings you comfort?",
+        "options": []
+      },
+      {
+        "id": "s40_f3",
+        "type": "text",
+        "label": "What helps you keep going when things are difficult?",
+        "options": []
+      },
+      {
+        "id": "s40_f4",
+        "type": "text",
+        "label": "What are up to three things you want to work toward?",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "1."
+      },
+      {
+        "type": "note",
+        "text": "2."
+      },
+      {
+        "type": "note",
+        "text": "3."
+      },
+      {
+        "id": "s40_f5",
+        "type": "text",
+        "label": "How would you know things were getting better?",
+        "options": []
+      },
+      {
+        "id": "s40_f6",
+        "type": "text",
+        "label": "What would make it easier to work with The Lotus Foundation?",
+        "options": []
+      },
+      {
+        "id": "s40_f7",
+        "type": "text",
+        "label": "Is there anything else you want us to understand?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 41,
+    "title": "Who should we contact in an emergency?",
+    "source": "Name: __________\nHow they know you: __________\nPhone: __________\nAnother phone, if available: __________\nAddress, if useful: __________\n☐ I do not have an emergency contact right now\nAnything we should know before contacting them?\n\nAnother emergency contact, optional: __________\nRelationship/phone: __________",
+    "blocks": [
+      {
+        "id": "s41_f1",
+        "type": "text",
+        "label": "Name",
+        "options": []
+      },
+      {
+        "id": "s41_f2",
+        "type": "text",
+        "label": "How they know you",
+        "options": []
+      },
+      {
+        "id": "s41_f3",
+        "type": "text",
+        "label": "Phone",
+        "options": []
+      },
+      {
+        "id": "s41_f4",
+        "type": "text",
+        "label": "Another phone, if available",
+        "options": []
+      },
+      {
+        "id": "s41_f5",
+        "type": "choice",
+        "label": "Address, if useful",
+        "options": ["I do not have an emergency contact right now"]
+      },
+      {
+        "id": "s41_f6",
+        "type": "text",
+        "label": "Anything we should know before contacting them?",
+        "options": []
+      },
+      {
+        "id": "s41_f7",
+        "type": "text",
+        "label": "Another emergency contact, optional",
+        "options": []
+      },
+      {
+        "id": "s41_f8",
+        "type": "text",
+        "label": "Relationship/phone",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 42,
+    "title": "Review & Permission to Contact",
+    "source": "☐ My answers are correct as far as I know. Some answers may be estimates.\n☐ The Lotus Foundation may contact me about this request using the safe contact choices I provided.\nIf answering for someone else:\n☐ I have permission or authority to share this information.\nHow you know the person or your authority to help:\n\nSigning here does not give permission for treatment, sharing health records, research, or using your story or photo. Staff will explain those separately if needed.\nParticipant or authorized representative: __________\nSignature: __________ Date: __________\nPerson helping or making the referral, if different: __________\nDate: __________\nStaff/witness: __________\nSignature: __________ Date: __________\nOptional invitations\nMay The Lotus Foundation contact you to ask about your experience with its programs?\n☐ Yes ☐ No ☐ Ask me later\nMay The Lotus Foundation contact you about possible research opportunities?\n☐ Yes ☐ No ☐ Ask me later\nSaying yes only allows an invitation. It does not sign you up for research or allow a partner to see your private records. Saying no does not affect your access to services.",
+    "blocks": [
+      {
+        "id": "s42_f1",
+        "type": "choice",
+        "label": "Review & Permission to Contact",
+        "options": [
+          "My answers are correct as far as I know. Some answers may be estimates.",
+          "The Lotus Foundation may contact me about this request using the safe contact choices I provided.",
+          "I have permission or authority to share this information."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "If answering for someone else:"
+      },
+      {
+        "id": "s42_f2",
+        "type": "text",
+        "label": "How you know the person or your authority to help",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Signing here does not give permission for treatment, sharing health records, research, or using your story or photo. Staff will explain those separately if needed."
+      },
+      {
+        "id": "s42_f3",
+        "type": "text",
+        "label": "Participant or authorized representative",
+        "options": []
+      },
+      {
+        "id": "s42_f4",
+        "type": "text",
+        "label": "Signature: Date",
+        "options": []
+      },
+      {
+        "id": "s42_f5",
+        "type": "text",
+        "label": "Person helping or making the referral, if different",
+        "options": []
+      },
+      {
+        "id": "s42_f6",
+        "type": "text",
+        "label": "Date",
+        "options": []
+      },
+      {
+        "id": "s42_f7",
+        "type": "text",
+        "label": "Staff/witness",
+        "options": []
+      },
+      {
+        "id": "s42_f8",
+        "type": "text",
+        "label": "Signature: Date",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Optional invitations"
+      },
+      {
+        "id": "s42_f9",
+        "type": "choice",
+        "label": "May The Lotus Foundation contact you to ask about your experience with its programs?",
+        "options": ["Yes", "No", "Ask me later"]
+      },
+      {
+        "id": "s42_f10",
+        "type": "choice",
+        "label": "May The Lotus Foundation contact you about possible research opportunities?",
+        "options": ["Yes", "No", "Ask me later"]
+      },
+      {
+        "type": "note",
+        "text": "Saying yes only allows an invitation. It does not sign you up for research or allow a partner to see your private records. Saying no does not affect your access to services."
+      }
+    ]
+  },
+  {
+    "number": 43,
+    "title": "Record the Intake Status",
+    "source": "Case number: __________\nParticipant record ID: __________\nStaff member: __________\nDate information gathered: __________\nRecord type:\n☐ Referral ☐ Intake ☐ Continuation ☐ Update ☐ Reassessment\nHow received:\n☐ Website ☐ Paper/PDF ☐ Phone ☐ Partner ☐ Other\nCurrent status:\n☐ Received\n☐ Contact needed\n☐ Intake started\n☐ Checking program requirements\n☐ Enrolled\n☐ Waiting for an opening\n☐ Referred elsewhere\n☐ Participant declined\n☐ Unable to reach\n☐ Closed\nWhere to restart if unfinished: __________\nPreferred follow-up method: __________\nNext action, staff member, and date: __________",
+    "blocks": [
+      {
+        "id": "s43_f1",
+        "type": "text",
+        "label": "Case number",
+        "options": []
+      },
+      {
+        "id": "s43_f2",
+        "type": "text",
+        "label": "Participant record ID",
+        "options": []
+      },
+      {
+        "id": "s43_f3",
+        "type": "text",
+        "label": "Staff member",
+        "options": []
+      },
+      {
+        "id": "s43_f4",
+        "type": "text",
+        "label": "Date information gathered",
+        "options": []
+      },
+      {
+        "id": "s43_f5",
+        "type": "choice",
+        "label": "Record type",
+        "options": [
+          "Referral",
+          "Intake",
+          "Continuation",
+          "Update",
+          "Reassessment"
+        ]
+      },
+      {
+        "id": "s43_f6",
+        "type": "choice",
+        "label": "How received",
+        "options": ["Website", "Paper/PDF", "Phone", "Partner", "Other"]
+      },
+      {
+        "id": "s43_f7",
+        "type": "choice",
+        "label": "Current status",
+        "options": [
+          "Received",
+          "Contact needed",
+          "Intake started",
+          "Checking program requirements",
+          "Enrolled",
+          "Waiting for an opening",
+          "Referred elsewhere",
+          "Participant declined",
+          "Unable to reach",
+          "Closed"
+        ]
+      },
+      {
+        "id": "s43_f8",
+        "type": "text",
+        "label": "Where to restart if unfinished",
+        "options": []
+      },
+      {
+        "id": "s43_f9",
+        "type": "text",
+        "label": "Preferred follow-up method",
+        "options": []
+      },
+      {
+        "id": "s43_f10",
+        "type": "text",
+        "label": "Next action, staff member, and date",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 44,
+    "title": "Check Program Fit & Information Sources",
+    "source": "Program considered: __________\nRequirements reviewed: __________\nDecision and reason: __________\nAlternative support offered, if needed: __________\nAssigned staff/program/partner: __________\nFunding source or grant code, if applicable: __________\nFirst contact date: __________\nService start date: __________\nWho provided the information?\n☐ Participant ☐ Referrer ☐ Authorized representative\n☐ Records reviewed ☐ Other: __________\nFor important answers, identify whether they are:\n☐ Self-reported ☐ Estimated ☐ Verified\n☐ Unknown ☐ Skipped ☐ Not applicable\nDo not turn “not sure” or a skipped answer into “no.” Keep the participant’s meaning when entering reporting categories.",
+    "blocks": [
+      {
+        "id": "s44_f1",
+        "type": "text",
+        "label": "Program considered",
+        "options": []
+      },
+      {
+        "id": "s44_f2",
+        "type": "text",
+        "label": "Requirements reviewed",
+        "options": []
+      },
+      {
+        "id": "s44_f3",
+        "type": "text",
+        "label": "Decision and reason",
+        "options": []
+      },
+      {
+        "id": "s44_f4",
+        "type": "text",
+        "label": "Alternative support offered, if needed",
+        "options": []
+      },
+      {
+        "id": "s44_f5",
+        "type": "text",
+        "label": "Assigned staff/program/partner",
+        "options": []
+      },
+      {
+        "id": "s44_f6",
+        "type": "text",
+        "label": "Funding source or grant code, if applicable",
+        "options": []
+      },
+      {
+        "id": "s44_f7",
+        "type": "text",
+        "label": "First contact date",
+        "options": []
+      },
+      {
+        "id": "s44_f8",
+        "type": "text",
+        "label": "Service start date",
+        "options": []
+      },
+      {
+        "id": "s44_f9",
+        "type": "choice",
+        "label": "Who provided the information?",
+        "options": [
+          "Participant",
+          "Referrer",
+          "Authorized representative",
+          "Records reviewed",
+          "Other",
+          "Self-reported",
+          "Estimated",
+          "Verified",
+          "Unknown",
+          "Skipped",
+          "Not applicable"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "For important answers, identify whether they are:"
+      },
+      {
+        "type": "note",
+        "text": "Do not turn “not sure” or a skipped answer into “no.” Keep the participant’s meaning when entering reporting categories."
+      }
+    ]
+  },
+  {
+    "number": 45,
+    "title": "Track Needed Documents",
+    "source": "Request documents for an identified purpose. Explain the reason and help the participant obtain them.\nFor each document:\nDocument: __________\nProgram/purpose: __________\nDate requested: __________\nDate received/reviewed: __________\nReviewed by: __________\nHelp needed to obtain it: __________\nPossible documents include:\n☐ Housing/homelessness verification\n☐ Disability verification\n☐ Children’s education information\n☐ Coverage/benefit information\n☐ Representative authority\n☐ Other: __________\nTreatment consent status, if applicable: __________\nPermission to obtain/share records and its limits: __________\nOther program-specific permissions: __________\nSupervisor review/signature, if applicable: __________\nDate: __________\nRestricted identifying information\nDo not put Social Security numbers in this general form.\nIf an identified program requires a participant’s or family member’s identifier, collect it separately through the restricted process.\nPerson/identifier needed: __________\nRequirement and reason: __________\nCollection/verification status: __________\nRestricted record reference: __________",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Request documents for an identified purpose. Explain the reason and help the participant obtain them."
+      },
+      {
+        "type": "note",
+        "text": "For each document:"
+      },
+      {
+        "id": "s45_f1",
+        "type": "text",
+        "label": "Document",
+        "options": []
+      },
+      {
+        "id": "s45_f2",
+        "type": "text",
+        "label": "Program/purpose",
+        "options": []
+      },
+      {
+        "id": "s45_f3",
+        "type": "text",
+        "label": "Date requested",
+        "options": []
+      },
+      {
+        "id": "s45_f4",
+        "type": "text",
+        "label": "Date received/reviewed",
+        "options": []
+      },
+      {
+        "id": "s45_f5",
+        "type": "text",
+        "label": "Reviewed by",
+        "options": []
+      },
+      {
+        "id": "s45_f6",
+        "type": "choice",
+        "label": "Help needed to obtain it",
+        "options": [
+          "Housing/homelessness verification",
+          "Disability verification",
+          "Children’s education information",
+          "Coverage/benefit information",
+          "Representative authority",
+          "Other"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Possible documents include:"
+      },
+      {
+        "id": "s45_f7",
+        "type": "text",
+        "label": "Treatment consent status, if applicable",
+        "options": []
+      },
+      {
+        "id": "s45_f8",
+        "type": "text",
+        "label": "Permission to obtain/share records and its limits",
+        "options": []
+      },
+      {
+        "id": "s45_f9",
+        "type": "text",
+        "label": "Other program-specific permissions",
+        "options": []
+      },
+      {
+        "id": "s45_f10",
+        "type": "text",
+        "label": "Supervisor review/signature, if applicable",
+        "options": []
+      },
+      {
+        "id": "s45_f11",
+        "type": "text",
+        "label": "Date",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Restricted identifying information"
+      },
+      {
+        "type": "note",
+        "text": "Do not put Social Security numbers in this general form."
+      },
+      {
+        "type": "note",
+        "text": "If an identified program requires a participant’s or family member’s identifier, collect it separately through the restricted process."
+      },
+      {
+        "id": "s45_f12",
+        "type": "text",
+        "label": "Person/identifier needed",
+        "options": []
+      },
+      {
+        "id": "s45_f13",
+        "type": "text",
+        "label": "Requirement and reason",
+        "options": []
+      },
+      {
+        "id": "s45_f14",
+        "type": "text",
+        "label": "Collection/verification status",
+        "options": []
+      },
+      {
+        "id": "s45_f15",
+        "type": "text",
+        "label": "Restricted record reference",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 46,
+    "title": "Make a Plan Together",
+    "source": "Complete one entry for each agreed goal.\nWhat the participant wants: __________\nStarting situation and date: __________\nWhat progress would look like: __________\nAction or service planned: __________\nWho will help: __________\nTarget or review date: __________\nHow progress will be checked: __________\nSupport or accommodations needed: __________\nParticipant agrees with the plan:\n☐ Yes ☐ Changes requested ☐ Review later\nParticipant/representative: __________ Date: __________\nStaff: __________ Date: __________",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Complete one entry for each agreed goal."
+      },
+      {
+        "id": "s46_f1",
+        "type": "text",
+        "label": "What the participant wants",
+        "options": []
+      },
+      {
+        "id": "s46_f2",
+        "type": "text",
+        "label": "Starting situation and date",
+        "options": []
+      },
+      {
+        "id": "s46_f3",
+        "type": "text",
+        "label": "What progress would look like",
+        "options": []
+      },
+      {
+        "id": "s46_f4",
+        "type": "text",
+        "label": "Action or service planned",
+        "options": []
+      },
+      {
+        "id": "s46_f5",
+        "type": "text",
+        "label": "Who will help",
+        "options": []
+      },
+      {
+        "id": "s46_f6",
+        "type": "text",
+        "label": "Target or review date",
+        "options": []
+      },
+      {
+        "id": "s46_f7",
+        "type": "text",
+        "label": "How progress will be checked",
+        "options": []
+      },
+      {
+        "id": "s46_f8",
+        "type": "text",
+        "label": "Support or accommodations needed",
+        "options": []
+      },
+      {
+        "id": "s46_f9",
+        "type": "choice",
+        "label": "Participant agrees with the plan",
+        "options": ["Yes", "Changes requested", "Review later"]
+      },
+      {
+        "id": "s46_f10",
+        "type": "text",
+        "label": "Participant/representative: Date",
+        "options": []
+      },
+      {
+        "id": "s46_f11",
+        "type": "text",
+        "label": "Staff: Date",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 47,
+    "title": "Record Each Service or Contact",
+    "source": "Date: __________\nStaff/provider: __________\nProgram/service: __________\nHow provided:\n☐ In person ☐ Phone ☐ Video ☐ Group ☐ Other\nTime spent or service units: __________\nWhat one unit means: __________\nAttendance:\n☐ Attended ☐ Cancelled ☐ Missed ☐ Rescheduled\nWhat support was provided? __________\nWhich goal did it address? __________\nParticipant response or progress: __________\nNew needs or barriers: __________\nNext action, owner, and date: __________",
+    "blocks": [
+      {
+        "id": "s47_f1",
+        "type": "text",
+        "label": "Date",
+        "options": []
+      },
+      {
+        "id": "s47_f2",
+        "type": "text",
+        "label": "Staff/provider",
+        "options": []
+      },
+      {
+        "id": "s47_f3",
+        "type": "text",
+        "label": "Program/service",
+        "options": []
+      },
+      {
+        "id": "s47_f4",
+        "type": "choice",
+        "label": "How provided",
+        "options": ["In person", "Phone", "Video", "Group", "Other"]
+      },
+      {
+        "id": "s47_f5",
+        "type": "text",
+        "label": "Time spent or service units",
+        "options": []
+      },
+      {
+        "id": "s47_f6",
+        "type": "text",
+        "label": "What one unit means",
+        "options": []
+      },
+      {
+        "id": "s47_f7",
+        "type": "choice",
+        "label": "Attendance",
+        "options": ["Attended", "Cancelled", "Missed", "Rescheduled"]
+      },
+      {
+        "id": "s47_f8",
+        "type": "text",
+        "label": "What support was provided?",
+        "options": []
+      },
+      {
+        "id": "s47_f9",
+        "type": "text",
+        "label": "Which goal did it address?",
+        "options": []
+      },
+      {
+        "id": "s47_f10",
+        "type": "text",
+        "label": "Participant response or progress",
+        "options": []
+      },
+      {
+        "id": "s47_f11",
+        "type": "text",
+        "label": "New needs or barriers",
+        "options": []
+      },
+      {
+        "id": "s47_f12",
+        "type": "text",
+        "label": "Next action, owner, and date",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 48,
+    "title": "Follow Up on Partner Referrals",
+    "source": "Partner organization: __________\nService requested: __________\nReferral date: __________\nContact person: __________\nPermission to share information checked: __________\nInformation shared and limits: __________\nWhat happened?\n☐ Waiting for response\n☐ Contact made\n☐ Appointment scheduled\n☐ Service received\n☐ Waiting list\n☐ Service unavailable\n☐ Participant declined\n☐ Unable to reach\n☐ Unknown\nOutcome date/details: __________\nWho will follow up, and when? __________",
+    "blocks": [
+      {
+        "id": "s48_f1",
+        "type": "text",
+        "label": "Partner organization",
+        "options": []
+      },
+      {
+        "id": "s48_f2",
+        "type": "text",
+        "label": "Service requested",
+        "options": []
+      },
+      {
+        "id": "s48_f3",
+        "type": "text",
+        "label": "Referral date",
+        "options": []
+      },
+      {
+        "id": "s48_f4",
+        "type": "text",
+        "label": "Contact person",
+        "options": []
+      },
+      {
+        "id": "s48_f5",
+        "type": "text",
+        "label": "Permission to share information checked",
+        "options": []
+      },
+      {
+        "id": "s48_f6",
+        "type": "text",
+        "label": "Information shared and limits",
+        "options": []
+      },
+      {
+        "id": "s48_f7",
+        "type": "choice",
+        "label": "What happened?",
+        "options": [
+          "Waiting for response",
+          "Contact made",
+          "Appointment scheduled",
+          "Service received",
+          "Waiting list",
+          "Service unavailable",
+          "Participant declined",
+          "Unable to reach",
+          "Unknown"
+        ]
+      },
+      {
+        "id": "s48_f8",
+        "type": "text",
+        "label": "Outcome date/details",
+        "options": []
+      },
+      {
+        "id": "s48_f9",
+        "type": "text",
+        "label": "Who will follow up, and when?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 49,
+    "title": "Check Progress",
+    "source": "Review date: __________\nReviewer: __________\nReview point:\n☐ Starting assessment ☐ 30 days ☐ 90 days ☐ 180 days\n☐ Exit ☐ After exit ☐ Other: __________\nUse timing appropriate to the program and its funding commitments.\nFor each relevant goal or measure, record:\nWhat is being measured: __________\nStarting answer/value and date: __________\nCurrent answer/value and date: __________\nSource: ☐ Participant ☐ Partner ☐ Verified record ☐ Other\nNext action: __________\nPossible areas:\n* Housing situation and stability.\n* Time without steady housing during a stated period.\n* Monthly cash income.\n* Benefits obtained or kept.\n* Health coverage and access to providers.\n* Appointments attended.\n* Help needed with daily tasks.\n* School enrollment, attendance, and completion.\n* Credentials earned.\n* Device and internet access.\n* Digital skills.\n* Job placement, start date, hours, pay, and retention.\n* Participant-defined recovery goals.\n* Social support and connection.\n* Other participant goals.\nInformation missing and reason: __________\nNew concerns, setbacks, or unexpected effects: __________\nChanges agreed with the participant: __________\nUse the same definitions and time periods when comparing answers. Use separate clinical or research tools where appropriate.",
+    "blocks": [
+      {
+        "id": "s49_f1",
+        "type": "text",
+        "label": "Review date",
+        "options": []
+      },
+      {
+        "id": "s49_f2",
+        "type": "text",
+        "label": "Reviewer",
+        "options": []
+      },
+      {
+        "id": "s49_f3",
+        "type": "choice",
+        "label": "Review point",
+        "options": [
+          "Starting assessment",
+          "30 days",
+          "90 days",
+          "180 days",
+          "Exit",
+          "After exit",
+          "Other"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Use timing appropriate to the program and its funding commitments."
+      },
+      {
+        "type": "note",
+        "text": "For each relevant goal or measure, record:"
+      },
+      {
+        "id": "s49_f4",
+        "type": "text",
+        "label": "What is being measured",
+        "options": []
+      },
+      {
+        "id": "s49_f5",
+        "type": "text",
+        "label": "Starting answer/value and date",
+        "options": []
+      },
+      {
+        "id": "s49_f6",
+        "type": "text",
+        "label": "Current answer/value and date",
+        "options": []
+      },
+      {
+        "id": "s49_f7",
+        "type": "choice",
+        "label": "Source",
+        "options": ["Participant", "Partner", "Verified record", "Other"]
+      },
+      {
+        "id": "s49_f8",
+        "type": "text",
+        "label": "Next action",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Possible areas:"
+      },
+      {
+        "type": "note",
+        "text": "* Housing situation and stability."
+      },
+      {
+        "type": "note",
+        "text": "* Time without steady housing during a stated period."
+      },
+      {
+        "type": "note",
+        "text": "* Monthly cash income."
+      },
+      {
+        "type": "note",
+        "text": "* Benefits obtained or kept."
+      },
+      {
+        "type": "note",
+        "text": "* Health coverage and access to providers."
+      },
+      {
+        "type": "note",
+        "text": "* Appointments attended."
+      },
+      {
+        "type": "note",
+        "text": "* Help needed with daily tasks."
+      },
+      {
+        "type": "note",
+        "text": "* School enrollment, attendance, and completion."
+      },
+      {
+        "type": "note",
+        "text": "* Credentials earned."
+      },
+      {
+        "type": "note",
+        "text": "* Device and internet access."
+      },
+      {
+        "type": "note",
+        "text": "* Digital skills."
+      },
+      {
+        "type": "note",
+        "text": "* Job placement, start date, hours, pay, and retention."
+      },
+      {
+        "type": "note",
+        "text": "* Participant-defined recovery goals."
+      },
+      {
+        "type": "note",
+        "text": "* Social support and connection."
+      },
+      {
+        "type": "note",
+        "text": "* Other participant goals."
+      },
+      {
+        "id": "s49_f9",
+        "type": "text",
+        "label": "Information missing and reason",
+        "options": []
+      },
+      {
+        "id": "s49_f10",
+        "type": "text",
+        "label": "New concerns, setbacks, or unexpected effects",
+        "options": []
+      },
+      {
+        "id": "s49_f11",
+        "type": "text",
+        "label": "Changes agreed with the participant",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Use the same definitions and time periods when comparing answers. Use separate clinical or research tools where appropriate."
+      }
+    ]
+  },
+  {
+    "number": 50,
+    "title": "Ask About the Experience",
+    "source": "These questions may be read aloud. Participants may skip any of them.\nDid you feel listened to and respected?\n☐ Yes ☐ Sometimes ☐ No ☐ Skip\nWas it easy enough to get help?\n☐ Yes ☐ Sometimes ☐ No ☐ Skip\nDid the support focus on what mattered to you?\n☐ Yes ☐ Somewhat ☐ No ☐ Skip\nWhat helped most?\n\nWhat could The Lotus Foundation do better?\n\nWhat do you still need help with?",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "These questions may be read aloud. Participants may skip any of them."
+      },
+      {
+        "id": "s50_f1",
+        "type": "choice",
+        "label": "Did you feel listened to and respected?",
+        "options": ["Yes", "Sometimes", "No", "Skip"]
+      },
+      {
+        "id": "s50_f2",
+        "type": "choice",
+        "label": "Was it easy enough to get help?",
+        "options": ["Yes", "Sometimes", "No", "Skip"]
+      },
+      {
+        "id": "s50_f3",
+        "type": "choice",
+        "label": "Did the support focus on what mattered to you?",
+        "options": ["Yes", "Somewhat", "No", "Skip"]
+      },
+      {
+        "id": "s50_f4",
+        "type": "text",
+        "label": "What helped most?",
+        "options": []
+      },
+      {
+        "id": "s50_f5",
+        "type": "text",
+        "label": "What could The Lotus Foundation do better?",
+        "options": []
+      },
+      {
+        "id": "s50_f6",
+        "type": "text",
+        "label": "What do you still need help with?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 51,
+    "title": "Record Exit & Continuing Support",
+    "source": "Exit date: __________\nReason:\n☐ Goals reached\n☐ Planned services completed\n☐ Moved to another provider\n☐ Participant chose to stop\n☐ Lost contact\n☐ Program/funding eligibility changed\n☐ Other: __________\nServices completed: __________\nProgress at exit: __________\nNeeds that remain: __________\nContinuing supports/referrals: __________\nMay staff follow up? ☐ Yes ☐ No ☐ Not yet discussed\nSafe contact method: __________\nFollow-up date: __________\nResponsible staff: __________",
+    "blocks": [
+      {
+        "id": "s51_f1",
+        "type": "text",
+        "label": "Exit date",
+        "options": []
+      },
+      {
+        "id": "s51_f2",
+        "type": "choice",
+        "label": "Reason",
+        "options": [
+          "Goals reached",
+          "Planned services completed",
+          "Moved to another provider",
+          "Participant chose to stop",
+          "Lost contact",
+          "Program/funding eligibility changed",
+          "Other"
+        ]
+      },
+      {
+        "id": "s51_f3",
+        "type": "text",
+        "label": "Services completed",
+        "options": []
+      },
+      {
+        "id": "s51_f4",
+        "type": "text",
+        "label": "Progress at exit",
+        "options": []
+      },
+      {
+        "id": "s51_f5",
+        "type": "text",
+        "label": "Needs that remain",
+        "options": []
+      },
+      {
+        "id": "s51_f6",
+        "type": "text",
+        "label": "Continuing supports/referrals",
+        "options": []
+      },
+      {
+        "id": "s51_f7",
+        "type": "choice",
+        "label": "May staff follow up?",
+        "options": ["Yes", "No", "Not yet discussed"]
+      },
+      {
+        "id": "s51_f8",
+        "type": "text",
+        "label": "Safe contact method",
+        "options": []
+      },
+      {
+        "id": "s51_f9",
+        "type": "text",
+        "label": "Follow-up date",
+        "options": []
+      },
+      {
+        "id": "s51_f10",
+        "type": "text",
+        "label": "Responsible staff",
+        "options": []
+      }
+    ]
+  },
+  {
+    "number": 52,
+    "title": "Define What the Program Will Report",
+    "source": "Program/grant: __________\nReporting period: __________\nWho the program serves: __________\nProgram requirements: __________\nProgram goals: __________\nFor each item reported:\nWhat will be counted or measured: __________\nExact definition: __________\nWhere the information comes from: __________\nWhen it is collected: __________\nResponsible staff: __________\nCount these separately:\n* Individual participants.\n* Referrals.\n* Program enrollments.\n* Service visits/contacts.\n* Service hours or units.\n* Completed services.\n* Outcomes.\n* Completed follow-ups.\nHow duplicate participant counts will be avoided: __________\nWho is included in each outcome calculation: __________\nTime period used: __________\nMissing answers and missed follow-ups: __________\nChecks for accuracy and corrections: __________\nA blank answer is not “no.” A missing amount is not zero. An improvement after services does not, by itself, prove the services caused the improvement.",
+    "blocks": [
+      {
+        "id": "s52_f1",
+        "type": "text",
+        "label": "Program/grant",
+        "options": []
+      },
+      {
+        "id": "s52_f2",
+        "type": "text",
+        "label": "Reporting period",
+        "options": []
+      },
+      {
+        "id": "s52_f3",
+        "type": "text",
+        "label": "Who the program serves",
+        "options": []
+      },
+      {
+        "id": "s52_f4",
+        "type": "text",
+        "label": "Program requirements",
+        "options": []
+      },
+      {
+        "id": "s52_f5",
+        "type": "text",
+        "label": "Program goals",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "For each item reported:"
+      },
+      {
+        "id": "s52_f6",
+        "type": "text",
+        "label": "What will be counted or measured",
+        "options": []
+      },
+      {
+        "id": "s52_f7",
+        "type": "text",
+        "label": "Exact definition",
+        "options": []
+      },
+      {
+        "id": "s52_f8",
+        "type": "text",
+        "label": "Where the information comes from",
+        "options": []
+      },
+      {
+        "id": "s52_f9",
+        "type": "text",
+        "label": "When it is collected",
+        "options": []
+      },
+      {
+        "id": "s52_f10",
+        "type": "text",
+        "label": "Responsible staff",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Count these separately:"
+      },
+      {
+        "type": "note",
+        "text": "* Individual participants."
+      },
+      {
+        "type": "note",
+        "text": "* Referrals."
+      },
+      {
+        "type": "note",
+        "text": "* Program enrollments."
+      },
+      {
+        "type": "note",
+        "text": "* Service visits/contacts."
+      },
+      {
+        "type": "note",
+        "text": "* Service hours or units."
+      },
+      {
+        "type": "note",
+        "text": "* Completed services."
+      },
+      {
+        "type": "note",
+        "text": "* Outcomes."
+      },
+      {
+        "type": "note",
+        "text": "* Completed follow-ups."
+      },
+      {
+        "id": "s52_f11",
+        "type": "text",
+        "label": "How duplicate participant counts will be avoided",
+        "options": []
+      },
+      {
+        "id": "s52_f12",
+        "type": "text",
+        "label": "Who is included in each outcome calculation",
+        "options": []
+      },
+      {
+        "id": "s52_f13",
+        "type": "text",
+        "label": "Time period used",
+        "options": []
+      },
+      {
+        "id": "s52_f14",
+        "type": "text",
+        "label": "Missing answers and missed follow-ups",
+        "options": []
+      },
+      {
+        "id": "s52_f15",
+        "type": "text",
+        "label": "Checks for accuracy and corrections",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "A blank answer is not “no.” A missing amount is not zero. An improvement after services does not, by itself, prove the services caused the improvement."
+      }
+    ]
+  },
+  {
+    "number": 53,
+    "title": "Plan Partnerships & Research",
+    "source": "Potential partner: __________\nContact person: __________\nPurpose:\n☐ Provide services together\n☐ Improve a program\n☐ Evaluate a program\n☐ Conduct research\n☐ Other: __________\nWhat question or need would the partnership address?\n\nHow could participants or the community benefit?\n\nWhat activities are proposed?\n\nWhat information is needed, and why?\n\nCould grouped information or information without personal identifiers meet the need?\n\nMeasures, methods, and timeline: __________\nTime or effort requested from participants: __________\nAccessibility and support needs: __________\nSeparate permissions needed: __________\nOrganizational or ethics review needed and its outcome: __________\nWho may access the information? __________\nHow may it be used? __________\nHow will it be protected? __________\nHow long will it be kept, and how will it be deleted? __________\nPartner responsibilities: __________\nReporting/publication plans: __________\nApproval status and reviewer: __________\nCompleting intake or agreeing to receive an invitation does not give a prospective partner access to identifiable participant records.",
+    "blocks": [
+      {
+        "id": "s53_f1",
+        "type": "text",
+        "label": "Potential partner",
+        "options": []
+      },
+      {
+        "id": "s53_f2",
+        "type": "text",
+        "label": "Contact person",
+        "options": []
+      },
+      {
+        "id": "s53_f3",
+        "type": "choice",
+        "label": "Purpose",
+        "options": [
+          "Provide services together",
+          "Improve a program",
+          "Evaluate a program",
+          "Conduct research",
+          "Other"
+        ]
+      },
+      {
+        "id": "s53_f4",
+        "type": "text",
+        "label": "What question or need would the partnership address?",
+        "options": []
+      },
+      {
+        "id": "s53_f5",
+        "type": "text",
+        "label": "How could participants or the community benefit?",
+        "options": []
+      },
+      {
+        "id": "s53_f6",
+        "type": "text",
+        "label": "What activities are proposed?",
+        "options": []
+      },
+      {
+        "id": "s53_f7",
+        "type": "text",
+        "label": "What information is needed, and why?",
+        "options": []
+      },
+      {
+        "id": "s53_f8",
+        "type": "text",
+        "label": "Could grouped information or information without personal identifiers meet the need?",
+        "options": []
+      },
+      {
+        "id": "s53_f9",
+        "type": "text",
+        "label": "Measures, methods, and timeline",
+        "options": []
+      },
+      {
+        "id": "s53_f10",
+        "type": "text",
+        "label": "Time or effort requested from participants",
+        "options": []
+      },
+      {
+        "id": "s53_f11",
+        "type": "text",
+        "label": "Accessibility and support needs",
+        "options": []
+      },
+      {
+        "id": "s53_f12",
+        "type": "text",
+        "label": "Separate permissions needed",
+        "options": []
+      },
+      {
+        "id": "s53_f13",
+        "type": "text",
+        "label": "Organizational or ethics review needed and its outcome",
+        "options": []
+      },
+      {
+        "id": "s53_f14",
+        "type": "text",
+        "label": "Who may access the information?",
+        "options": []
+      },
+      {
+        "id": "s53_f15",
+        "type": "text",
+        "label": "How may it be used?",
+        "options": []
+      },
+      {
+        "id": "s53_f16",
+        "type": "text",
+        "label": "How will it be protected?",
+        "options": []
+      },
+      {
+        "id": "s53_f17",
+        "type": "text",
+        "label": "How long will it be kept, and how will it be deleted?",
+        "options": []
+      },
+      {
+        "id": "s53_f18",
+        "type": "text",
+        "label": "Partner responsibilities",
+        "options": []
+      },
+      {
+        "id": "s53_f19",
+        "type": "text",
+        "label": "Reporting/publication plans",
+        "options": []
+      },
+      {
+        "id": "s53_f20",
+        "type": "text",
+        "label": "Approval status and reviewer",
+        "options": []
+      },
+      {
+        "type": "note",
+        "text": "Completing intake or agreeing to receive an invitation does not give a prospective partner access to identifiable participant records."
+      }
+    ]
+  }
+]
