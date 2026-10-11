@@ -360,13 +360,7 @@ summary {
   }
 }
 /* Community resource hub */
-:root {
-  --color-royal-purple: #244e40;
-  --color-teal: #39634f;
-  --color-gold: #c39b50;
-  --foreground: #243c33;
-  --background: #fcfaf5;
-}
+
 .skip-link {
   position: fixed;
   top: -100px;
@@ -382,7 +376,7 @@ summary {
   max-width: 1200px;
   margin: auto;
   padding: 36px 24px 64px;
-  color: #243c33;
+  color: #2b2130;
 }
 .hub h1,
 .hub h2 {
@@ -421,7 +415,7 @@ summary {
   padding: 35px 0 50px;
 }
 .hub-hero-card {
-  background: #244e40;
+  background: #5e3a87;
   color: #fff;
   border-radius: 150px 150px 20px 20px;
   padding: 80px 40px 35px;
@@ -458,13 +452,13 @@ summary {
   cursor: pointer;
 }
 .hub-button {
-  background: #244e40;
+  background: #5e3a87;
   color: white;
-  border: 1px solid #244e40;
+  border: 1px solid #5e3a87;
 }
 .hub-secondary {
-  border: 1px solid #244e40;
-  color: #244e40;
+  border: 1px solid #5e3a87;
+  color: #5e3a87;
   background: transparent;
 }
 .hub-button:disabled {
@@ -486,7 +480,7 @@ summary {
 }
 .hub-card,
 .hub-panel {
-  border: 1px solid #d7dfd5;
+  border: 1px solid #ded4e7;
   background: #fff;
   border-radius: 18px;
   padding: 28px;
@@ -498,41 +492,41 @@ summary {
   font-weight: 600;
 }
 .hub-card:hover {
-  border-color: #244e40;
+  border-color: #5e3a87;
 }
 .hub-sage {
-  background: #e9efe4;
+  background: #f3edf8;
   border-radius: 24px;
   padding: 36px;
 }
 .hub-number {
   font-size: 1.8rem;
-  color: #557059;
+  color: #5e3a87;
 }
 .hub-notice {
   padding: 18px 22px;
-  background: #f1ebdc;
-  border-left: 3px solid #af8640;
+  background: #fbf9f5;
+  border-left: 3px solid #d4af37;
   border-radius: 4px;
   font-size: 0.95rem;
 }
 .hub-dark {
   padding: 40px;
-  background: #244e40;
+  background: #5e3a87;
   color: #fff;
   border-radius: 20px;
   margin-top: 40px;
 }
 .hub-dark .hub-button {
-  background: #efdbad;
-  color: #244e40;
+  background: #d4af37;
+  color: #5e3a87;
 }
 .hub-dark .hub-secondary {
   color: #fff;
   border-color: #fff;
 }
 .hub-dark .eyebrow {
-  color: #efdbad;
+  color: #d4af37;
 }
 .hub-form {
   max-width: 860px;
@@ -552,7 +546,7 @@ summary {
   width: 100%;
   padding: 14px;
   background: #fff;
-  border: 1px solid #96a999;
+  border: 1px solid #ad9abc;
   border-radius: 8px;
   min-height: 48px;
 }
@@ -560,7 +554,7 @@ summary {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  border: 1px solid #d7dfd5;
+  border: 1px solid #ded4e7;
   border-radius: 9px;
   padding: 14px;
   margin: 9px 0;
@@ -572,15 +566,15 @@ summary {
   min-width: 20px;
   width: 20px;
   height: 20px;
-  accent-color: #244e40;
+  accent-color: #5e3a87;
 }
 .hub progress {
   width: 100%;
   height: 8px;
-  accent-color: #244e40;
+  accent-color: #5e3a87;
 }
 .hub-muted {
-  color: #56665d;
+  color: #65596e;
   font-size: 0.9rem;
 }
 .hub-error {
@@ -592,7 +586,7 @@ summary {
   padding: 12px 0;
 }
 .hub :focus-visible {
-  outline: 3px solid #b48326;
+  outline: 3px solid #d4af37;
   outline-offset: 4px;
 }
 .hub-panel > .hub-secondary {
@@ -635,4 +629,32 @@ summary {
   .hub-secondary {
     max-width: 100%;
   }
+}
+
+/* Preserve the original typography and centered cream page introductions. */
+.hub-intro {
+  text-align: center;
+  margin: 0 auto 2rem;
+  background: var(--color-cream);
+  padding: 3rem 1.5rem;
+}
+.hub-intro h1 {
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hub-intro p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hub-card,
+.hub-panel {
+  border-color: #ded4e7;
+  border-radius: 1rem;
+}
+.hub-form .hub-intro {
+  text-align: left;
+}
+.hub-form .hub-intro h1 {
+  margin-left: 0;
 }

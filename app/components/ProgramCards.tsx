@@ -3,16 +3,28 @@ import { BookOpenCheck, HeartPulse, ArrowRight } from "lucide-react";
 
 const PROGRAMS = [
   {
+    icon: HeartPulse,
+    title: "Mental Health & Recovery",
+    subtitle: "Qualified partner connections",
+    desc: "Explore mental health care, substance-use treatment, peer support, and recovery housing through qualified providers.",
+  },
+  {
     icon: BookOpenCheck,
-    title: "Mental Health Skill Building",
-    subtitle: "2.1",
-    desc: "Helping adults develop the skills needed to live safely and independently in the community.",
+    title: "Housing & Everyday Needs",
+    subtitle: "Navigation & community resources",
+    desc: "Ask about housing, rent and utility needs, food, clothing, and benefits. Assistance depends on eligibility and available funding.",
+  },
+  {
+    icon: BookOpenCheck,
+    title: "Career Pathways",
+    subtitle: "Training & employment connections",
+    desc: "Explore CDL, skilled trades, AI and digital skills, peer recovery, and CSAC pathways. Credentials are awarded by qualified providers and authorities.",
   },
   {
     icon: HeartPulse,
-    title: "Substance Use Intensive Outpatient",
-    subtitle: "SA IOP",
-    desc: "Structured treatment supporting recovery through counseling, education, and relapse prevention.",
+    title: "Support for the Next Step",
+    subtitle: "Applications & follow-up",
+    desc: "Get help sorting through resources, planning next steps, and addressing barriers. Contact us for current availability.",
   },
 ];
 
@@ -46,7 +58,11 @@ export default function ProgramCards() {
               </h3>
               <p className="mt-3 text-sm text-foreground/70">{p.desc}</p>
               <Link
-                href="/services"
+                href={
+                  p.title === "Career Pathways"
+                    ? "/career-pathways"
+                    : "/services"
+                }
                 className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-royal-purple hover:text-teal"
               >
                 Learn more <ArrowRight className="h-4 w-4" />

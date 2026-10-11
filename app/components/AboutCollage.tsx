@@ -16,15 +16,15 @@ export default function AboutCollage() {
         </h2>
         <span className="mt-4 block h-[3px] w-16 bg-gold" />
         <p className="mt-6 text-sm md:text-base leading-relaxed text-foreground/75">
-          The Lotus Foundation is a behavioral health organization dedicated
-          to creating meaningful, lasting change right here in Richmond and
-          Central Virginia.
+          The Lotus Foundation is a community resource hub helping individuals
+          and families across Greater Richmond find a clear next step toward
+          wellness, stability, and opportunity.
         </p>
         <p className="mt-4 text-sm md:text-base leading-relaxed text-foreground/75">
-          We partner with individuals and families of all backgrounds to
-          build the skills, support, and stability needed to live safely and
-          independently &mdash; meeting people where they are on their
-          recovery journey.
+          We listen, help identify urgent needs, connect people with qualified
+          partners, assist with applications, and follow up. Contact us for
+          current availability of pantry access, training opportunities, and
+          assistance funds.
         </p>
         <Link
           href="/about"

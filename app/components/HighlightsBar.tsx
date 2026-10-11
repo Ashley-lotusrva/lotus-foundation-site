@@ -1,10 +1,14 @@
 import { Users, MapPin, ShieldCheck, ClipboardList } from "lucide-react";
 
 const HIGHLIGHTS = [
-  { icon: Users, label: "Adults 18+", sub: "Who we serve" },
+  { icon: Users, label: "Individuals & families", sub: "Who we serve" },
   { icon: MapPin, label: "Richmond & Central VA", sub: "Service area" },
-  { icon: ShieldCheck, label: "Evidence-based", sub: "Our approach" },
-  { icon: ClipboardList, label: "Two core programs", sub: "Growing every year" },
+  { icon: ShieldCheck, label: "Personalized navigation", sub: "Our approach" },
+  {
+    icon: ClipboardList,
+    label: "Community connections",
+    sub: "Care, stability & opportunity",
+  },
 ];
 
 export default function HighlightsBar() {
@@ -22,10 +26,7 @@ export default function HighlightsBar() {
             const Icon = h.icon;
             return (
               <div key={h.label} className="text-center">
-                <Icon
-                  className="mx-auto h-7 w-7 text-gold"
-                  strokeWidth={1.5}
-                />
+                <Icon className="mx-auto h-7 w-7 text-gold" strokeWidth={1.5} />
                 <p className="mt-3 text-sm md:text-base font-semibold text-white">
                   {h.label}
                 </p>

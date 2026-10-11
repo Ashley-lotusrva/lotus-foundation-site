@@ -50,10 +50,9 @@ export default function SkylineHero() {
           </h1>
           <span className="mt-4 block h-[3px] w-24 bg-gold" />
           <p className="mt-6 text-base md:text-lg text-white max-w-lg [text-shadow:0_1px_8px_rgba(0,0,0,0.75)]">
-            The Lotus Foundation empowers individuals living with mental
-            health and substance use challenges through compassionate,
-            evidence-based, person-centered behavioral health services
-            &mdash; rooted in Richmond, Virginia.
+            The Lotus Foundation connects Greater Richmond residents to care,
+            housing resources, everyday support, and career pathways through one
+            welcoming community resource hub.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
