@@ -29,13 +29,39 @@ test("complete approved form has all 53 sections and medication fields", () => {
 test("submissions cannot include staff fields, forged fields or missing acknowledgment", () => {
   const base = {
     requestId: "b7951ca8-d0bb-4cbf-a3b3-1c74b7cbb124",
-    answers: { s3_f1: { text: "Test person" } },
+    answers: {
+      hub_who: { choices: ["Me"] },
+      hub_name: { text: "Test person" },
+      hub_location: { text: "Richmond" },
+      hub_contact_method: { choices: ["No safe contact method"] },
+      hub_contact_plan: { text: "Discuss a safe meeting plan" },
+      hub_needs: { choices: ["Food"] },
+      hub_priority: { choices: ["Food"] },
+      hub_deadline: { choices: ["No"] },
+      hub_housing: { choices: ["Shelter"] },
+      hub_risk: { choices: ["Unsure"] },
+    },
     consent: true,
     website: "",
   };
   assert.equal(submissionSchema.safeParse(base).success, true);
   for (const patch of [
     { consent: false },
+    {
+      answers: {
+        ...base.answers,
+        s24_medications: { rows: [["Private medicine"]] },
+      },
+    },
+    { answers: { ...base.answers, hub_priority: { choices: ["Housing"] } } },
+    { answers: { ...base.answers, hub_contact_plan: { text: "" } } },
+    {
+      answers: {
+        ...base.answers,
+        hub_who: { choices: ["Someone I am helping"] },
+        hub_permission: { choices: ["No"] },
+      },
+    },
     { answers: { s43_f1: { text: "owner" } } },
     { answers: { invented: { text: "yes" } } },
     { website: "bot" },

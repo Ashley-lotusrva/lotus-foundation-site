@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Answers, sections, answerText, fieldMap, summarize } from "@/lib/form";
+import { hubFields } from "@/lib/hub-form";
 import { statuses } from "@/lib/validation";
 import Fields from "@/app/components/referrals/Fields";
 type Referral = {
@@ -78,6 +79,19 @@ export default function Record({ id }: { id: string }) {
       </Link>
       <span className="eyebrow block">{record.case_number}</span>
       <h1>{summary.name}</h1>
+      {hubFields.some((f) => record.answers[f.id]) && (
+        <section className="intake-card">
+          <h2>Brief referral answers</h2>
+          {hubFields
+            .filter((f) => record.answers[f.id])
+            .map((f) => (
+              <div key={f.id}>
+                <strong>{f.label}</strong>
+                <p>{answerText(record.answers[f.id])}</p>
+              </div>
+            ))}
+        </section>
+      )}
       <p>
         Received {new Date(record.created_at).toLocaleString()} ·{" "}
         {record.status}

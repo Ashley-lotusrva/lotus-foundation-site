@@ -18,11 +18,11 @@ export default function Footer() {
               <span className="font-display text-lg">The Lotus Foundation</span>
             </div>
             <p className="mt-3 font-display italic text-gold text-sm">
-              Rising Above. Growing Within.
+              One Door. Many Pathways. A Stronger Future.
             </p>
             <p className="mt-4 text-sm text-white/70 max-w-xs">
-              Empowering individuals living with mental health and substance use
-              challenges through compassionate, evidence-based care.
+              Connecting Greater Richmond residents with community resources,
+              qualified partners, and career pathways.
             </p>
           </div>
 
@@ -31,10 +31,22 @@ export default function Footer() {
               Explore
             </h3>
             <nav className="mt-4 flex flex-col gap-2 text-sm text-white/80">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <Link href="/about" className="hover:text-white">About</Link>
-              <Link href="/services" className="hover:text-white">Services</Link>
-              <Link href="/contact" className="hover:text-white">Contact</Link>
+              <Link href="/" className="hover:text-white">
+                Home
+              </Link>
+              <Link href="/about" className="hover:text-white">
+                About
+              </Link>
+              <Link href="/services" className="hover:text-white">
+                Services
+              </Link>
+              <Link href="/privacy">Referral privacy</Link>
+              <Link href="/accessibility">Accessibility</Link>
+              <Link href="/partners">Partners</Link>
+              <Link href="/staff/login">Member sign-in</Link>
+              <Link href="/contact" className="hover:text-white">
+                Contact
+              </Link>
             </nav>
           </div>
 
@@ -58,8 +70,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/15 pt-6 text-center text-xs text-white/60">
-          &copy; {new Date().getFullYear()} The Lotus Foundation. Empowering Lives.
-          Restoring Hope. Building Futures.
+          &copy; {new Date().getFullYear()} The Lotus Foundation. Empowering
+          Lives. Restoring Hope. Building Futures.
         </div>
       </div>
     </footer>

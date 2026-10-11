@@ -1,4 +1,4 @@
-import ReferralForm from "./referral-form";
+import ReferralForm from "./hub-referral";
 import { configured } from "@/lib/server";
 export const dynamic = "force-dynamic";
 export const metadata = {

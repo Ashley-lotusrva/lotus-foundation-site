@@ -1,3 +1,4 @@
+import { hubFields } from "./hub-form";
 import raw from "./form-sections.json";
 export type Block = {
   type: string;
@@ -28,6 +29,8 @@ export const fieldMap = new Map(
       .map((b) => [b.id!, { ...b, section: s.number }] as const),
   ),
 );
+for (const f of hubFields)
+  fieldMap.set(f.id, { ...f, type: f.options ? "choice" : "text", section: 0 });
 export function answerText(a: Answer | undefined): string {
   return a
     ? [
@@ -47,6 +50,16 @@ export function extract(answers: Answers, section: number, label: string) {
   return f?.id ? answerText(answers[f.id]) : "";
 }
 export function summarize(answers: Answers) {
+  if (Object.keys(answers).some((k) => k.startsWith("hub_")))
+    return {
+      name: answerText(answers.hub_name) || "Name not provided",
+      needs: answers.hub_needs?.choices || [],
+      contact: answerText(answers.hub_contact_method),
+      location: answerText(answers.hub_location),
+      priority: answerText(answers.hub_priority),
+      medications: [],
+      answered: Object.keys(answers).length,
+    };
   const name =
     extract(answers, 3, "Name you would like us to use") ||
     [extract(answers, 3, "First"), extract(answers, 3, "Last")]
