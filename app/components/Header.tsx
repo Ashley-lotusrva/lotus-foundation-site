@@ -6,10 +6,11 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/get-help", label: "Get Help" },
   { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
+  { href: "/career-pathways", label: "Career Pathways" },
+  { href: "/about", label: "About" },
+  { href: "/get-involved", label: "Get Involved" },
 ];
 
 export default function Header() {
@@ -19,7 +20,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gold/30">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="flex items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src="/lotus-logo.png"
             alt="The Lotus Foundation logo"
@@ -33,13 +38,15 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden xl:flex items-center gap-5">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={`text-sm font-medium tracking-wide transition-colors hover:text-teal ${
-                pathname === link.href ? "text-royal-purple" : "text-foreground/80"
+                pathname === link.href
+                  ? "text-royal-purple"
+                  : "text-foreground/80"
               }`}
             >
               {link.label}
@@ -49,14 +56,15 @@ export default function Header() {
             href="/referral"
             className="rounded-full bg-royal-purple px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-teal"
           >
-            Make a Referral
+            Refer Someone
           </Link>
         </nav>
 
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="xl:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
+          aria-expanded={open}
         >
           <span className="h-0.5 w-6 bg-royal-purple" />
           <span className="h-0.5 w-6 bg-royal-purple" />
@@ -65,7 +73,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="md:hidden flex flex-col gap-1 border-t border-gold/30 bg-white px-6 py-4">
+        <nav className="xl:hidden flex flex-col gap-1 border-t border-gold/30 bg-white px-6 py-4">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -81,7 +89,7 @@ export default function Header() {
             className="mt-2 rounded-full bg-royal-purple px-5 py-2 text-center text-sm font-medium text-white"
             onClick={() => setOpen(false)}
           >
-            Make a Referral
+            Refer Someone
           </Link>
         </nav>
       )}

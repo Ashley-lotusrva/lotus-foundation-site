@@ -14,7 +14,16 @@ export async function POST(r: Request) {
     if (!configured()) throw new Error("Setup incomplete");
     checkOrigin(r);
     await limit(r, "submit", 15);
-    const body = submissionSchema.parse(await readJSON(r));
+    const parsed = submissionSchema.safeParse(await readJSON(r));
+    if (!parsed.success)
+      return json(
+        {
+          error:
+            parsed.error.issues[0]?.message || "Please review your answers.",
+        },
+        400,
+      );
+    const body = parsed.data;
     const summary = summarize(body.answers);
     const { data, error } = await admin().rpc("lf_submit", {
       p_request: body.requestId,

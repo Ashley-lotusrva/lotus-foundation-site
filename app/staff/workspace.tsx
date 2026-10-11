@@ -1,4 +1,5 @@
 "use client";
+import { hubFields } from "@/lib/hub-form";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -97,6 +98,11 @@ export default function Workspace() {
           Sign out
         </button>
       </div>
+      <p>
+        <a href="/forms/complete-referral-form.txt" download>
+          Complete intake reference for staff follow-up
+        </a>
+      </p>
       <nav>
         {["referrals", "parser", "program records"].map((t) => (
           <button
@@ -147,11 +153,16 @@ export default function Workspace() {
                 Support need
                 <select value={need} onChange={(e) => setNeed(e.target.value)}>
                   <option value="">All needs</option>
-                  {sections[1].blocks
-                    .find((b) => b.id === "s2_f1")
-                    ?.options?.map((o) => (
-                      <option key={o}>{o}</option>
-                    ))}
+                  {[
+                    ...new Set([
+                      ...(sections[1].blocks.find((b) => b.id === "s2_f1")
+                        ?.options || []),
+                      ...(hubFields.find((f) => f.id === "hub_needs")
+                        ?.options || []),
+                    ]),
+                  ].map((o) => (
+                    <option key={o}>{o}</option>
+                  ))}
                 </select>
               </label>
             </div>

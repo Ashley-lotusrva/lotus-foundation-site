@@ -11,9 +11,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "The Lotus Foundation | Rising Above. Growing Within.",
+  title: "The Lotus Foundation | One Door. Many Pathways.",
   description:
-    "The Lotus Foundation empowers individuals living with mental health and substance use challenges through compassionate, evidence-based, person-centered behavioral health services in Virginia.",
+    "A Greater Richmond community resource hub connecting people with care, housing resources, everyday support, and career pathways.",
 };
 
 export default function RootLayout({
@@ -24,8 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
         <Header />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
       </body>
     </html>
