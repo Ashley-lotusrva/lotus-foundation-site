@@ -1,4 +1,4 @@
-create schema if not exists private;
+create schema if not exists lf_private;
 create sequence public.lf_case_seq;
 create table public.lf_staff (
  user_id uuid primary key references auth.users(id),
@@ -54,16 +54,16 @@ create table public.lf_audit (
 alter table public.lf_audit enable row level security;
 create policy owner_read on public.lf_audit for select to authenticated using(exists(select 1 from public.lf_staff where user_id=(select auth.uid()) and active and role='owner'));
 grant select on public.lf_audit to authenticated;
-create table private.lf_limits (key text primary key, window_start timestamptz not null, hits integer not null);
-alter table private.lf_limits enable row level security;
+create table lf_private.lf_limits (key text primary key, window_start timestamptz not null, hits integer not null);
+alter table lf_private.lf_limits enable row level security;
 -- These functions are callable ONLY by the trusted server. Public clients have no insert/read grant.
 create function public.lf_allow_request(p_key text,p_max int,p_seconds int) returns boolean language plpgsql security invoker set search_path='' as $$
 declare c int;
 begin
- insert into private.lf_limits as l values(p_key,now(),1)
+ insert into lf_private.lf_limits as l values(p_key,now(),1)
  on conflict(key) do update set hits=case when l.window_start < now()-make_interval(secs=>p_seconds) then 1 else l.hits+1 end,
  window_start=case when l.window_start < now()-make_interval(secs=>p_seconds) then now() else l.window_start end returning hits into c;
- delete from private.lf_limits where window_start<now()-interval '2 days';
+ delete from lf_private.lf_limits where window_start<now()-interval '2 days';
  return c<=p_max;
 end $$;
 create function public.lf_submit(p_request uuid,p_name text,p_location text,p_needs text[],p_answers jsonb,p_search text) returns table(id uuid,case_number text) language plpgsql security invoker set search_path='' as $$
@@ -83,8 +83,15 @@ begin
 end $$;
 revoke all on public.lf_staff,public.lf_referrals,public.lf_entries,public.lf_audit from anon;
 revoke all on function public.lf_allow_request(text,int,int),public.lf_submit(uuid,text,text,text[],jsonb,text),public.lf_update(uuid,int,text,uuid,date,uuid) from public,anon,authenticated;
-grant usage on schema private to service_role;
-grant all on all tables in schema private to service_role;
+grant usage on schema lf_private to service_role;
+grant all on lf_private.lf_limits to service_role;
 grant all on public.lf_staff,public.lf_referrals,public.lf_entries,public.lf_audit to service_role;
-grant all on all sequences in schema public to service_role;
+grant usage,select on public.lf_case_seq,public.lf_audit_id_seq to service_role;
 grant execute on function public.lf_allow_request(text,int,int),public.lf_submit(uuid,text,text,text[],jsonb,text),public.lf_update(uuid,int,text,uuid,date,uuid) to service_role;
+
+revoke all on public.lf_staff,public.lf_referrals,public.lf_entries,public.lf_audit from public,anon,authenticated;
+grant select on public.lf_staff,public.lf_referrals,public.lf_entries,public.lf_audit to authenticated;
+revoke all on public.lf_case_seq,public.lf_audit_id_seq from public,anon,authenticated;
+revoke all on schema lf_private from public,anon,authenticated;
+revoke all on lf_private.lf_limits from public,anon,authenticated;
+notify pgrst, 'reload schema';

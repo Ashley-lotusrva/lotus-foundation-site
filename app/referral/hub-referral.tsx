@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { hubQuestions, hubFields } from "@/lib/hub-form";
 import type { Answers } from "@/lib/form";
-export default function HubReferral({ ready }: { ready: boolean }) {
+export default function HubReferral({ ready, endpoint }: { ready: boolean; endpoint: string }) {
   const [answers, setAnswers] = useState<Answers>({}),
     [index, setIndex] = useState(0),
     [review, setReview] = useState(false),
@@ -94,7 +94,7 @@ export default function HubReferral({ ready }: { ready: boolean }) {
     setBusy(true);
     try {
       request.current ||= crypto.randomUUID();
-      const r = await fetch("/api/referrals", {
+      const r = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -106,6 +106,7 @@ export default function HubReferral({ ready }: { ready: boolean }) {
       });
       const d = await r.json();
       if (!r.ok) throw Error(d.error);
+      if (typeof d.caseNumber !== "string" || !d.caseNumber.startsWith("LF-")) throw Error("We could not confirm your referral. Please try again.");
       setReceipt(d.caseNumber);
       setAnswers({});
     } catch (e) {

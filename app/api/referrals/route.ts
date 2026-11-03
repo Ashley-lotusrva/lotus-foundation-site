@@ -9,9 +9,21 @@ import {
 } from "@/lib/server";
 import { submissionSchema } from "@/lib/validation";
 import { searchable, summarize } from "@/lib/form";
+import { referralEndpoint } from "@/lib/referral-endpoint";
 export async function POST(r: Request) {
   try {
-    if (!configured()) throw new Error("Setup incomplete");
+    if (!configured()) {
+      const origin = r.headers.get("origin");
+      const site = new URL(r.url).origin;
+      if (!["https://lotusfoundation.info", "https://www.lotusfoundation.info"].includes(site))
+        throw new Error("Setup incomplete");
+      if (origin !== site) throw new Error("Unauthorized");
+      const upstream = await fetch(referralEndpoint, {
+        method: "POST", headers: { Origin: origin, "Content-Type": "application/json" },
+        body: JSON.stringify(await readJSON(r)), cache: "no-store",
+      });
+      return json(await upstream.json(), upstream.status);
+    }
     checkOrigin(r);
     await limit(r, "submit", 15);
     const parsed = submissionSchema.safeParse(await readJSON(r));
