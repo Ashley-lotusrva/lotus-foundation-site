@@ -1,7 +1,7 @@
 import "server-only";
 import { createClient } from "@supabase/supabase-js";
 import { createServerClient } from "@supabase/ssr";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { createHmac } from "node:crypto";
 export function configured() {
   return !!(
@@ -22,28 +22,33 @@ export function admin() {
 }
 export async function userClient() {
   const jar = await cookies();
-  return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
-    {
-      cookies: {
-        getAll: () => jar.getAll(),
-        setAll: (values) => {
-          values.forEach(({ name, value, options }) =>
-            jar.set(name, value, {
-              ...options,
-              httpOnly: true,
-              secure: process.env.NODE_ENV === "production",
-              sameSite: "lax",
-            }),
-          );
-        },
+  const host = (await headers()).get("host");
+  const production =
+    host === "lotusfoundation.info" || host === "www.lotusfoundation.info";
+  const url =
+    process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    (production && "https://lqmekhktucbxccfmfdzq.supabase.co");
+  const key =
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+    (production && "sb_publishable_QNVTjC6UOvJ3un3HvO8HBg_4RODPyFt");
+  if (!url || !key) throw new Error("Setup incomplete");
+  return createServerClient(url, key, {
+    cookies: {
+      getAll: () => jar.getAll(),
+      setAll: (values) => {
+        values.forEach(({ name, value, options }) =>
+          jar.set(name, value, {
+            ...options,
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "lax",
+          }),
+        );
       },
     },
-  );
+  });
 }
 export async function staff() {
-  if (!configured()) throw new Error("Setup incomplete");
   const client = await userClient();
   const {
     data: { user },
@@ -57,10 +62,20 @@ export async function staff() {
     .eq("active", true)
     .single();
   if (!data) throw new Error("Unauthorized");
-  return { user, role: data.role };
+  return { user, role: data.role, client };
 }
 export function checkOrigin(r: Request) {
-  if (r.headers.get("origin") !== process.env.APP_ORIGIN)
+  const origin = new URL(r.url).origin;
+  if (
+    !(
+      origin === process.env.APP_ORIGIN ||
+      [
+        "https://lotusfoundation.info",
+        "https://www.lotusfoundation.info",
+      ].includes(origin)
+    ) ||
+    r.headers.get("origin") !== origin
+  )
     throw new Error("Unauthorized");
 }
 export async function limit(r: Request, kind: string, max: number) {

@@ -22,7 +22,13 @@ type Entry = {
   answers: Answers;
   created_at: string;
 };
-export default function Record({ id }: { id: string }) {
+export default function Record({
+  id,
+  writable,
+}: {
+  id: string;
+  writable: boolean;
+}) {
   const router = useRouter();
   const [record, setRecord] = useState<Referral | null>(null),
     [entries, setEntries] = useState<Entry[]>([]),
@@ -54,6 +60,7 @@ export default function Record({ id }: { id: string }) {
         setStatus(d.record.status);
         setDate(d.record.follow_up || "");
         setAssignee(d.record.assigned_to || "");
+        if (!writable) return;
         const m = await fetch("/api/staff/members");
         if (m.ok && alive) setMembers((await m.json()).members);
       } catch (e) {
@@ -63,7 +70,7 @@ export default function Record({ id }: { id: string }) {
     return () => {
       alive = false;
     };
-  }, [id, router]);
+  }, [id, router, writable]);
   if (!record)
     return (
       <main className="staff-shell">
@@ -131,80 +138,85 @@ export default function Record({ id }: { id: string }) {
           </div>
         </div>
       </div>
-      <div className="staff-record">
-        <h2>Next steps</h2>
-        <div className="staff-grid">
-          <label>
-            Status
-            <select value={status} onChange={(e) => setStatus(e.target.value)}>
-              {statuses.map((s) => (
-                <option key={s}>{s}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Follow-up date
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-            />
-          </label>
-          <label>
-            Assigned member
-            <select
-              value={assignee}
-              onChange={(e) => setAssignee(e.target.value)}
-            >
-              <option value="">Unassigned</option>
-              {members
-                .filter((m) => m.active)
-                .map((m) => (
-                  <option key={m.user_id} value={m.user_id}>
-                    {m.display_name} ({m.role})
-                  </option>
+      {writable && (
+        <div className="staff-record">
+          <h2>Next steps</h2>
+          <div className="staff-grid">
+            <label>
+              Status
+              <select
+                value={status}
+                onChange={(e) => setStatus(e.target.value)}
+              >
+                {statuses.map((s) => (
+                  <option key={s}>{s}</option>
                 ))}
-            </select>
-          </label>
-        </div>
-        <button
-          className="primary"
-          disabled={busy}
-          onClick={async () => {
-            setBusy(true);
-            setMessage("");
-            try {
-              const r = await fetch("/api/staff/referrals/" + id, {
-                method: "PATCH",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
+              </select>
+            </label>
+            <label>
+              Follow-up date
+              <input
+                type="date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              />
+            </label>
+            <label>
+              Assigned member
+              <select
+                value={assignee}
+                onChange={(e) => setAssignee(e.target.value)}
+              >
+                <option value="">Unassigned</option>
+                {members
+                  .filter((m) => m.active)
+                  .map((m) => (
+                    <option key={m.user_id} value={m.user_id}>
+                      {m.display_name} ({m.role})
+                    </option>
+                  ))}
+              </select>
+            </label>
+          </div>
+          <button
+            className="primary"
+            disabled={busy}
+            onClick={async () => {
+              setBusy(true);
+              setMessage("");
+              try {
+                const r = await fetch("/api/staff/referrals/" + id, {
+                  method: "PATCH",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    status,
+                    follow_up: date || null,
+                    assigned_to: assignee || null,
+                    version: record.version,
+                  }),
+                });
+                const d = await r.json();
+                if (!r.ok) throw Error(d.error);
+                setRecord({
+                  ...record,
                   status,
+                  version: record.version + 1,
                   follow_up: date || null,
                   assigned_to: assignee || null,
-                  version: record.version,
-                }),
-              });
-              const d = await r.json();
-              if (!r.ok) throw Error(d.error);
-              setRecord({
-                ...record,
-                status,
-                version: record.version + 1,
-                follow_up: date || null,
-                assigned_to: assignee || null,
-              });
-              setMessage("Next steps saved.");
-            } catch (e) {
-              setMessage(e instanceof Error ? e.message : "Save failed");
-            } finally {
-              setBusy(false);
-            }
-          }}
-        >
-          Save next steps
-        </button>
-        <p role="status">{message}</p>
-      </div>
+                });
+                setMessage("Next steps saved.");
+              } catch (e) {
+                setMessage(e instanceof Error ? e.message : "Save failed");
+              } finally {
+                setBusy(false);
+              }
+            }}
+          >
+            Save next steps
+          </button>
+          <p role="status">{message}</p>
+        </div>
+      )}
       <h2 className="text-2xl mt-8">Complete submitted answers</h2>
       {sections
         .filter((s) => s.number <= 42)
@@ -238,70 +250,74 @@ export default function Record({ id }: { id: string }) {
               ))}
           </details>
         ))}
-      <div className="intake-card">
-        <h2>Add a staff record</h2>
-        <p>
-          Submitted answers stay intact. Use a dated record for intake updates,
-          service notes, and progress.
-        </p>
-        <label>
-          Record type
-          <select
-            value={section}
-            onChange={(e) => {
-              setSection(Number(e.target.value));
-              setAnswers({});
+      {writable && (
+        <div className="intake-card">
+          <h2>Add a staff record</h2>
+          <p>
+            Submitted answers stay intact. Use a dated record for intake
+            updates, service notes, and progress.
+          </p>
+          <label>
+            Record type
+            <select
+              value={section}
+              onChange={(e) => {
+                setSection(Number(e.target.value));
+                setAnswers({});
+              }}
+            >
+              {sections
+                .filter((s) => s.number >= 43 && s.number <= 51)
+                .map((s) => (
+                  <option key={s.number} value={s.number}>
+                    {s.title}
+                  </option>
+                ))}
+            </select>
+          </label>
+          <Fields
+            blocks={sections[section - 1].blocks}
+            answers={answers}
+            onChange={(key, a) => setAnswers((v) => ({ ...v, [key]: a }))}
+          />
+          <button
+            className="primary"
+            disabled={busy}
+            onClick={async () => {
+              setBusy(true);
+              setError("");
+              try {
+                const r = await fetch("/api/staff/entries", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    referral_id: id,
+                    section_number: section,
+                    answers,
+                  }),
+                });
+                const d = await r.json();
+                if (!r.ok) throw Error(d.error);
+                const refresh = await fetch("/api/staff/referrals/" + id);
+                if (!refresh.ok)
+                  throw Error(
+                    "Saved, but could not reload. Refresh this page.",
+                  );
+                setEntries((await refresh.json()).entries);
+                setAnswers({});
+                setError("Staff record saved.");
+              } catch (e) {
+                setError(e instanceof Error ? e.message : "Save failed");
+              } finally {
+                setBusy(false);
+              }
             }}
           >
-            {sections
-              .filter((s) => s.number >= 43 && s.number <= 51)
-              .map((s) => (
-                <option key={s.number} value={s.number}>
-                  {s.title}
-                </option>
-              ))}
-          </select>
-        </label>
-        <Fields
-          blocks={sections[section - 1].blocks}
-          answers={answers}
-          onChange={(key, a) => setAnswers((v) => ({ ...v, [key]: a }))}
-        />
-        <button
-          className="primary"
-          disabled={busy}
-          onClick={async () => {
-            setBusy(true);
-            setError("");
-            try {
-              const r = await fetch("/api/staff/entries", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                  referral_id: id,
-                  section_number: section,
-                  answers,
-                }),
-              });
-              const d = await r.json();
-              if (!r.ok) throw Error(d.error);
-              const refresh = await fetch("/api/staff/referrals/" + id);
-              if (!refresh.ok)
-                throw Error("Saved, but could not reload. Refresh this page.");
-              setEntries((await refresh.json()).entries);
-              setAnswers({});
-              setError("Staff record saved.");
-            } catch (e) {
-              setError(e instanceof Error ? e.message : "Save failed");
-            } finally {
-              setBusy(false);
-            }
-          }}
-        >
-          Save staff record
-        </button>
-        <p role="status">{error}</p>
-      </div>
+            Save staff record
+          </button>
+          <p role="status">{error}</p>
+        </div>
+      )}
       <h2 className="text-2xl mt-8">Service & progress history</h2>
       {entries.map((entry) => (
         <details key={entry.id}>

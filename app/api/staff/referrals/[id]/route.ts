@@ -13,10 +13,9 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> },
 ) {
   try {
-    const { user } = await staff();
+    const { user, client: db } = await staff();
     const { id } = await params;
     z.string().uuid().parse(id);
-    const db = admin();
     const { data, error } = await db
       .from("lf_referrals")
       .select("*")

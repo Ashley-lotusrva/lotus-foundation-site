@@ -1,3 +1,4 @@
+import { configured } from "@/lib/server";
 import Record from "../../record";
 export const metadata = {
   title: "Private Referral | The Lotus Foundation",
@@ -8,5 +9,5 @@ export default async function Page({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  return <Record id={(await params).id} />;
+  return <Record writable={configured()} id={(await params).id} />;
 }

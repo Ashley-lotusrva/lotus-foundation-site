@@ -10,9 +10,8 @@ import {
 } from "@/lib/server";
 export async function POST(r: Request) {
   try {
-    if (!configured()) throw Error("Setup incomplete");
     checkOrigin(r);
-    await limit(r, "login", 12);
+    if (configured()) await limit(r, "login", 12); // Supabase Auth also enforces its own sign-in limits.
     const body = z
       .object({
         email: z.string().email(),
@@ -29,7 +28,7 @@ export async function POST(r: Request) {
       .eq("active", true)
       .single();
     if (!member.data) {
-      await client.auth.signOut();
+      await client.auth.signOut({ scope: "local" });
       throw Error("Unauthorized");
     }
     return json({ ok: true });

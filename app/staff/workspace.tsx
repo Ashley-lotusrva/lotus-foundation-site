@@ -22,7 +22,7 @@ type Row = {
   needs: string[];
   follow_up: string | null;
 };
-export default function Workspace() {
+export default function Workspace({ writable }: { writable: boolean }) {
   const router = useRouter();
   const [rows, setRows] = useState<Row[]>([]),
     [total, setTotal] = useState(0),
@@ -104,7 +104,10 @@ export default function Workspace() {
         </a>
       </p>
       <nav>
-        {["referrals", "parser", "program records"].map((t) => (
+        {(writable
+          ? ["referrals", "parser", "program records"]
+          : ["referrals", "parser"]
+        ).map((t) => (
           <button
             className={tab === t ? "primary" : "secondary"}
             key={t}
@@ -130,11 +133,11 @@ export default function Workspace() {
           >
             <div className="staff-grid">
               <label>
-                Search answers, name, or LF case number
+                Search by name or LF case number
                 <input
                   value={q}
                   onChange={(e) => setQ(e.target.value)}
-                  placeholder="Name, LF-0001, housing…"
+                  placeholder="Name or LF-0001…"
                 />
               </label>
               <label>

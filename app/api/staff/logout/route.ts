@@ -2,7 +2,7 @@ import { checkOrigin, userClient, json, failure } from "@/lib/server";
 export async function POST(r: Request) {
   try {
     checkOrigin(r);
-    await (await userClient()).auth.signOut();
+    await (await userClient()).auth.signOut({ scope: "local" });
     return json({ ok: true });
   } catch (e) {
     return failure(e);

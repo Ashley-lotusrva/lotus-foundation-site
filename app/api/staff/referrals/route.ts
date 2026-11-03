@@ -1,17 +1,16 @@
-import { admin, staff, json, failure } from "@/lib/server";
+import { staff, json, failure } from "@/lib/server";
 import { statuses } from "@/lib/validation";
 export async function GET(r: Request) {
   try {
-    const { user } = await staff();
+    const { user, client: db } = await staff();
     const url = new URL(r.url);
-    const search = (url.searchParams.get("q") || "").slice(0, 200);
+    const search = (url.searchParams.get("q") || "").trim().slice(0, 200);
     const status = url.searchParams.get("status");
     const need = url.searchParams.get("need");
     const page = Math.max(
       0,
       Math.min(10000, Number(url.searchParams.get("page")) || 0),
     );
-    const db = admin();
     let query = db
       .from("lf_referrals")
       .select(
@@ -24,10 +23,10 @@ export async function GET(r: Request) {
       if (/^LF-/i.test(search))
         query = query.ilike("case_number", search.replace(/[%_]/g, "") + "%");
       else
-        query = query.textSearch("search_text", search, {
-          config: "simple",
-          type: "websearch",
-        });
+        query = query.ilike(
+          "participant_name",
+          "%" + search.replace(/[\\%_]/g, "\\$&") + "%",
+        );
     }
     if (status && statuses.includes(status as (typeof statuses)[number]))
       query = query.eq("status", status);
